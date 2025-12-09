@@ -98,3 +98,13 @@ Custom Stellar AIz design tokens built on Tailwind:
 - Images should be optimized for web (prefer WebP/JPEG)
 - Keep file sizes minimal for fast loading
 - Follow established code style and formatting
+
+## Claude Code Skills
+
+フロントエンド実装時は、可能な限り `frontend-design` スキルを活用すること。
+
+- 新しいページやコンポーネントの作成
+- UIデザインの改善・リファクタリング
+- レスポンシブデザインの実装
+
+このスキルにより、高品質でプロダクションレベルのコードを生成できる。
