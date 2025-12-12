@@ -264,11 +264,11 @@ main {
 /* マーキーアイテム */
 .hero-marquee-item {
   flex-shrink: 0;
-  width: 180px;
-  height: 120px;
-  border-radius: 0.75rem;
+  width: 280px;
+  height: 180px;
+  border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -290,9 +290,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
 }
 
 .hero-marquee-placeholder.gradient-1 {
