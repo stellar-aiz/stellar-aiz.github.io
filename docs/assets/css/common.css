@@ -341,7 +341,44 @@ main {
 
 /* prefers-reduced-motion対応 */
 @media (prefers-reduced-motion: reduce) {
-  .hero-marquee-row {
+  .hero-marquee-row,
+  .testimonial-marquee-row {
     animation: none !important;
+  }
+}
+
+/* ================================
+   実績カードマーキーアニメーション
+   ================================ */
+
+.testimonial-marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.testimonial-marquee-row {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: testimonialMarquee 40s linear infinite;
+}
+
+.testimonial-marquee-row:hover {
+  animation-play-state: paused;
+}
+
+.testimonial-marquee-item {
+  flex-shrink: 0;
+  width: 380px;
+}
+
+@keyframes testimonialMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
