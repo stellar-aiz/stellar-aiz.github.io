@@ -439,60 +439,103 @@
       </div>
     </section>
 
-    <!-- 実績ハイライト Section -->
-    <section class="py-16 md:py-24 bg-gray-50 relative overflow-hidden">
-      <div class="container mx-auto px-4 md:px-6 lg:px-8">
-        <h2 class="section-title-stellar text-center scroll-fade-in">実績ハイライト</h2>
-        <p class="section-subtitle-stellar text-center max-w-3xl mx-auto scroll-fade-in">
-          多様な業界でAI導入を成功に導いています
-        </p>
-        
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto scroll-stagger-group">
-          <!-- 製造業 -->
-          <div class="card-stellar scroll-fade-up scroll-stagger-item">
-            <div class="text-blue-600 font-bold mb-2">製造業</div>
-            <h3 class="text-xl font-bold mb-3">大手電機メーカー</h3>
-            <p class="text-gray-600 mb-4">全バリューチェーンのAI導入戦略策定</p>
-            <div class="flex items-center gap-2 text-sm text-gray-500">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>期間：6週間</span>
-            </div>
-          </div>
-          
-          <!-- 金融業 -->
-          <div class="card-stellar scroll-fade-up scroll-stagger-item">
-            <div class="text-purple-600 font-bold mb-2">金融業</div>
-            <h3 class="text-xl font-bold mb-3">大手銀行</h3>
-            <p class="text-gray-600 mb-4">AIアーキテクチャ戦略の立案と実装支援</p>
-            <div class="flex items-center gap-2 text-sm text-gray-500">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>期間：8週間</span>
-            </div>
-          </div>
-          
-          <!-- 海外スタートアップ -->
-          <div class="card-stellar scroll-fade-up scroll-stagger-item">
-            <div class="text-cyan-500 font-bold mb-2">海外スタートアップ</div>
-            <h3 class="text-xl font-bold mb-3">遠隔医療スタートアップ</h3>
-            <p class="text-gray-600 mb-4">資金調達向けAI機能のPoC開発</p>
-            <div class="flex items-center gap-2 text-sm text-gray-500">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>期間：3週間</span>
-            </div>
-          </div>
+    <!-- 実績ハイライト Section (Flowbite Testimonials) -->
+    <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
+        <!-- Section Header -->
+        <div class="max-w-screen-md mx-auto mb-12 text-center">
+          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-green-800 bg-green-100 rounded-full dark:bg-green-900 dark:text-green-300">
+            Case Studies
+          </span>
+          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white">
+            実績ハイライト
+          </h2>
+          <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+            多様な業界でAI導入を成功に導いています
+          </p>
         </div>
-        
-        <div class="text-center mt-12">
-          <a href="/pages/record/" class="btn-secondary-stellar inline-flex items-center gap-2">
+
+        <!-- Testimonial Cards -->
+        <div class="grid gap-8 md:grid-cols-3">
+          <!-- 製造業 -->
+          <figure class="flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-700">
+            <blockquote class="mb-6">
+              <svg class="w-8 h-8 text-blue-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+              <p class="text-lg font-medium text-gray-900 dark:text-white">
+                全バリューチェーンのAI導入戦略を策定いただき、具体的なロードマップが明確になりました。
+              </p>
+            </blockquote>
+            <figcaption class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+              <div>
+                <div class="font-semibold text-gray-900 dark:text-white">大手電機メーカー</div>
+                <div class="text-sm text-blue-600 dark:text-blue-400">製造業</div>
+              </div>
+              <div class="flex items-center gap-1 px-3 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                6週間
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- 金融業 -->
+          <figure class="flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-700">
+            <blockquote class="mb-6">
+              <svg class="w-8 h-8 text-purple-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+              <p class="text-lg font-medium text-gray-900 dark:text-white">
+                AIアーキテクチャ戦略の立案から実装支援まで、一貫したサポートで安心して進められました。
+              </p>
+            </blockquote>
+            <figcaption class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+              <div>
+                <div class="font-semibold text-gray-900 dark:text-white">大手銀行</div>
+                <div class="text-sm text-purple-600 dark:text-purple-400">金融業</div>
+              </div>
+              <div class="flex items-center gap-1 px-3 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                8週間
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- 海外スタートアップ -->
+          <figure class="flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-700">
+            <blockquote class="mb-6">
+              <svg class="w-8 h-8 text-cyan-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+              <p class="text-lg font-medium text-gray-900 dark:text-white">
+                わずか3週間で資金調達向けのAI機能PoCを開発。投資家へのデモで高評価を得られました。
+              </p>
+            </blockquote>
+            <figcaption class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+              <div>
+                <div class="font-semibold text-gray-900 dark:text-white">遠隔医療スタートアップ</div>
+                <div class="text-sm text-cyan-600 dark:text-cyan-400">海外スタートアップ</div>
+              </div>
+              <div class="flex items-center gap-1 px-3 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                3週間
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-12 text-center">
+          <a href="/pages/record/" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 transition-colors">
             実績詳細を見る
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
           </a>
         </div>
