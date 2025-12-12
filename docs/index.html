@@ -91,42 +91,76 @@
             </div>
           </div>
         </div>
-        <!-- Image -->
+        <!-- Diagonal Marquee -->
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex lg:items-center">
-          <div class="relative w-full">
-            <!-- Decorative background -->
-            <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-2xl opacity-20"></div>
-            <!-- Main image placeholder -->
-            <div class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 rounded-2xl p-8 shadow-2xl">
-              <div class="space-y-4">
-                <!-- Mock AI interface -->
-                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
-                  <div class="flex items-center gap-3 mb-3">
-                    <div class="w-3 h-3 bg-red-400 rounded-full"></div>
-                    <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                    <div class="w-3 h-3 bg-green-400 rounded-full"></div>
-                  </div>
-                  <div class="space-y-2">
-                    <div class="h-2 bg-white/30 rounded w-3/4"></div>
-                    <div class="h-2 bg-white/30 rounded w-1/2"></div>
-                    <div class="h-2 bg-white/30 rounded w-5/6"></div>
-                  </div>
-                </div>
-                <!-- AI indicators -->
-                <div class="flex gap-3">
-                  <div class="flex-1 bg-white/10 backdrop-blur rounded-lg p-3 text-center">
-                    <div class="text-2xl font-bold text-white">AI</div>
-                    <div class="text-xs text-white/70">戦略</div>
-                  </div>
-                  <div class="flex-1 bg-white/10 backdrop-blur rounded-lg p-3 text-center">
-                    <div class="text-2xl font-bold text-white">PoC</div>
-                    <div class="text-xs text-white/70">開発</div>
-                  </div>
-                  <div class="flex-1 bg-white/10 backdrop-blur rounded-lg p-3 text-center">
-                    <div class="text-2xl font-bold text-white">DX</div>
-                    <div class="text-xs text-white/70">推進</div>
-                  </div>
-                </div>
+          <div class="hero-marquee-container shadow-2xl">
+            <div class="hero-marquee-wrapper">
+              <!-- Row 1: 左に流れる（速め） -->
+              <div class="hero-marquee-row scroll-left speed-fast">
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-1">AI戦略</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-2">PoC開発</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-3">DX推進</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-4">データ分析</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-5">自動化</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-6">LLM活用</div></div>
+                <!-- 複製（シームレスループ用） -->
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-1">AI戦略</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-2">PoC開発</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-3">DX推進</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-4">データ分析</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-5">自動化</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-6">LLM活用</div></div>
+              </div>
+
+              <!-- Row 2: 右に流れる（普通） -->
+              <div class="hero-marquee-row scroll-right">
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-4">RAG構築</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-5">チャットボット</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-6">画像認識</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-1">音声AI</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-2">API連携</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-3">業務効率化</div></div>
+                <!-- 複製（シームレスループ用） -->
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-4">RAG構築</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-5">チャットボット</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-6">画像認識</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-1">音声AI</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-2">API連携</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-3">業務効率化</div></div>
+              </div>
+
+              <!-- Row 3: 左に流れる（遅め） -->
+              <div class="hero-marquee-row scroll-left speed-slow">
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-2">予測分析</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-3">異常検知</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-4">レコメンド</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-5">OCR</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-6">NLP</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-1">MLOps</div></div>
+                <!-- 複製（シームレスループ用） -->
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-2">予測分析</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-3">異常検知</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-4">レコメンド</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-5">OCR</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-6">NLP</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-1">MLOps</div></div>
+              </div>
+
+              <!-- Row 4: 右に流れる（速め） -->
+              <div class="hero-marquee-row scroll-right speed-fast">
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-6">エージェント</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-1">ファインチューン</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-2">プロンプト設計</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-3">評価設計</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-4">セキュリティ</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-5">スケーリング</div></div>
+                <!-- 複製（シームレスループ用） -->
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-6">エージェント</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-1">ファインチューン</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-2">プロンプト設計</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-3">評価設計</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-4">セキュリティ</div></div>
+                <div class="hero-marquee-item"><div class="hero-marquee-placeholder gradient-5">スケーリング</div></div>
               </div>
             </div>
           </div>
