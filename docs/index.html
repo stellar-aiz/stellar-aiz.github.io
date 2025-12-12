@@ -21,92 +21,116 @@
   <meta name="twitter:card" content="summary_large_image">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
-  
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- Custom Tailwind Config -->
-  <script src="./assets/js/tailwind-config.js"></script>
-  
+  <script src="/assets/js/tailwind-config.js"></script>
+
+  <!-- Flowbite CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
   <!-- Common CSS -->
-  <link rel="stylesheet" href="./assets/css/common.css">
-  
-  <!-- Removed Rellax.js - Using scroll animations instead -->
-  
+  <link rel="stylesheet" href="/assets/css/common.css">
+
   <!-- Scroll Animations -->
-  <script src="./assets/js/scroll-animations.js" defer></script>
+  <script src="/assets/js/scroll-animations.js" defer></script>
+
+  <!-- Component Loader -->
+  <script src="/assets/js/components.js" defer></script>
 </head>
 <body class="bg-white text-gray-800">
-  <!-- Header Navigation -->
-  <header class="site-header fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-50 shadow-sm">
-    <div class="container mx-auto px-4 md:px-6 lg:px-8">
-      <div class="header-content flex justify-between items-center h-full">
-        <!-- Logo -->
-        <div class="logo">
-          <a href="./" aria-label="Stellar AIz ホーム">
-            <img src="./assets/images/logo/logo.png" alt="Stellar AIz" class="h-10">
-          </a>
-        </div>
-        
-        <!-- Navigation -->
-        <nav class="main-nav" aria-label="メインナビゲーション">
-          <!-- Mobile Menu Toggle -->
-          <button class="mobile-menu-toggle md:hidden p-2" aria-label="メニューを開く">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-          
-          <!-- Navigation List -->
-          <ul class="nav-list hidden md:flex items-center space-x-8">
-            <li><a href="./" class="nav-link text-blue-600 font-medium">ホーム</a></li>
-            <li><a href="./services/" class="nav-link hover:text-blue-600 transition-colors">サービス</a></li>
-            <li><a href="./record/" class="nav-link hover:text-blue-600 transition-colors">実績</a></li>
-            <li><a href="./about/" class="nav-link hover:text-blue-600 transition-colors">会社情報</a></li>
-            <li><a href="./news/" class="nav-link hover:text-blue-600 transition-colors">ニュース</a></li>
-            <li><a href="./inquiry/" class="btn-primary-stellar">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+  <!-- Header Component -->
+  <div id="header-placeholder"></div>
 
   <!-- Main Content -->
   <main>
-    <!-- Hero Section -->
-    <section class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
-      <!-- Background -->
-      <div class="absolute inset-0">
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-blue-900/90 to-purple-900/95"></div>
-      </div>
-      
-      <!-- Hero Content -->
-      <div class="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-        <div class="text-center text-white animate-fadein">
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            戦略と爆速開発で、<br>
-            AIの実践力を極める
+    <!-- Hero Section (Flowbite Image Side) -->
+    <section class="bg-white dark:bg-gray-900 pt-20">
+      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <!-- Text Content -->
+        <div class="mr-auto place-self-center lg:col-span-7">
+          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
+            <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+            </svg>
+            爆速AI開発
+          </span>
+          <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+            戦略と爆速開発で、<br>AIの実践力を極める
           </h1>
-          <p class="text-xl md:text-2xl mb-10 text-gray-300">
-            PoCに半年はもう古い。Stellar AIzは2〜3ヶ月で成果を出す。
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            PoCに半年はもう古い。Stellar AIzは2〜3ヶ月で成果を出す。戦略策定から実装まで一貫してサポートします。
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="./services/" class="btn-primary-stellar text-lg px-8 py-4">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/pages/services/" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 transition-colors">
               サービスを見る
+              <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
             </a>
-            <a href="./inquiry/" class="btn-secondary-stellar text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-gray-900">
+            <a href="/pages/inquiry/" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 transition-colors">
               PoCを相談する
             </a>
           </div>
+          <!-- Stats -->
+          <div class="flex flex-wrap gap-8 mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+            <div>
+              <p class="text-3xl font-bold text-blue-600 dark:text-blue-500">2-3ヶ月</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">PoC開発期間</p>
+            </div>
+            <div>
+              <p class="text-3xl font-bold text-blue-600 dark:text-blue-500">100+</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">AI導入支援実績</p>
+            </div>
+            <div>
+              <p class="text-3xl font-bold text-blue-600 dark:text-blue-500">95%</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">顧客満足度</p>
+            </div>
+          </div>
         </div>
-      </div>
-      
-      <!-- Scroll Indicator -->
-      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-pulse">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
+        <!-- Image -->
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex lg:items-center">
+          <div class="relative w-full">
+            <!-- Decorative background -->
+            <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-2xl opacity-20"></div>
+            <!-- Main image placeholder -->
+            <div class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 rounded-2xl p-8 shadow-2xl">
+              <div class="space-y-4">
+                <!-- Mock AI interface -->
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="h-2 bg-white/30 rounded w-3/4"></div>
+                    <div class="h-2 bg-white/30 rounded w-1/2"></div>
+                    <div class="h-2 bg-white/30 rounded w-5/6"></div>
+                  </div>
+                </div>
+                <!-- AI indicators -->
+                <div class="flex gap-3">
+                  <div class="flex-1 bg-white/10 backdrop-blur rounded-lg p-3 text-center">
+                    <div class="text-2xl font-bold text-white">AI</div>
+                    <div class="text-xs text-white/70">戦略</div>
+                  </div>
+                  <div class="flex-1 bg-white/10 backdrop-blur rounded-lg p-3 text-center">
+                    <div class="text-2xl font-bold text-white">PoC</div>
+                    <div class="text-xs text-white/70">開発</div>
+                  </div>
+                  <div class="flex-1 bg-white/10 backdrop-blur rounded-lg p-3 text-center">
+                    <div class="text-2xl font-bold text-white">DX</div>
+                    <div class="text-xs text-white/70">推進</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -219,65 +243,148 @@
       </div>
     </section>
 
-    <!-- サービスサマリー Section -->
-    <section class="py-16 md:py-24 bg-white">
-      <div class="container mx-auto px-4 md:px-6 lg:px-8">
-        <h2 class="section-title-stellar text-center scroll-fade-in">提供サービス</h2>
-        <p class="section-subtitle-stellar text-center max-w-3xl mx-auto scroll-fade-in">
-          戦略策定から実装まで、AIの実践を総合的に支援します
-        </p>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 scroll-stagger-group">
-          <!-- 生成AI導入支援 -->
-          <div class="card-stellar text-center hover:transform hover:-translate-y-1 transition-all scroll-scale-in scroll-stagger-item">
-            <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    <!-- サービス Section (Flowbite Feature Cards) -->
+    <section class="py-16 md:py-24 bg-white dark:bg-gray-900">
+      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
+        <!-- Section Header -->
+        <div class="max-w-screen-md mx-auto mb-12 text-center">
+          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
+            Services
+          </span>
+          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white">
+            提供サービス
+          </h2>
+          <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+            戦略策定から実装まで、AIの実践を総合的に支援します
+          </p>
+        </div>
+
+        <!-- Service Cards -->
+        <div class="grid gap-8 md:grid-cols-3">
+          <!-- AI戦略コンサルティング -->
+          <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-blue-100 dark:bg-blue-900">
+              <svg class="w-6 h-6 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
               </svg>
             </div>
-            <h3 class="text-lg font-bold mb-2">生成AI導入支援</h3>
-            <p class="text-gray-600 text-sm">ChatGPT、Claude等の生成AIを業務に組み込む支援</p>
+            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">AI戦略コンサルティング</h3>
+            <p class="mb-4 text-gray-500 dark:text-gray-400">
+              経営課題を起点に、最適なAI活用戦略を策定。ROIを最大化するロードマップを設計します。
+            </p>
+            <ul class="mb-4 space-y-2 text-sm text-gray-500 dark:text-gray-400">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                現状分析・課題整理
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                AI活用ロードマップ策定
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                投資対効果の試算
+              </li>
+            </ul>
+            <a href="/pages/services/" class="inline-flex items-center text-blue-600 hover:underline dark:text-blue-500">
+              詳細を見る
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
           </div>
-          
-          <!-- 戦略策定支援 -->
-          <div class="card-stellar text-center hover:transform hover:-translate-y-1 transition-all scroll-scale-in scroll-stagger-item">
-            <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 rounded-lg flex items-center justify-center">
-              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+
+          <!-- フルカスタムAIエージェント開発 -->
+          <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-purple-100 dark:bg-purple-900">
+              <svg class="w-6 h-6 text-purple-600 dark:text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
               </svg>
             </div>
-            <h3 class="text-lg font-bold mb-2">戦略策定支援</h3>
-            <p class="text-gray-600 text-sm">DX/AIロードマップの策定と実行計画の立案</p>
+            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">フルカスタムAIエージェント開発</h3>
+            <p class="mb-4 text-gray-500 dark:text-gray-400">
+              お客様の業務に完全に最適化されたAIエージェントをゼロから開発。複雑な要件にも対応します。
+            </p>
+            <ul class="mb-4 space-y-2 text-sm text-gray-500 dark:text-gray-400">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                要件定義・設計
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                フルスクラッチ開発
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                既存システム連携
+              </li>
+            </ul>
+            <a href="/pages/services/" class="inline-flex items-center text-blue-600 hover:underline dark:text-blue-500">
+              詳細を見る
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
           </div>
-          
-          <!-- 爆速PoC開発 -->
-          <div class="card-stellar text-center hover:transform hover:-translate-y-1 transition-all scroll-scale-in scroll-stagger-item">
-            <div class="w-16 h-16 mx-auto mb-4 bg-cyan-100 rounded-lg flex items-center justify-center">
-              <svg class="w-8 h-8 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+
+          <!-- ローコードAIエージェント開発 -->
+          <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-cyan-100 dark:bg-cyan-900">
+              <svg class="w-6 h-6 text-cyan-600 dark:text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
               </svg>
             </div>
-            <h3 class="text-lg font-bold mb-2">爆速PoC開発</h3>
-            <p class="text-gray-600 text-sm">2-3ヶ月で動くプロトタイプを開発・検証</p>
-          </div>
-          
-          <!-- 開発組織・人材育成 -->
-          <div class="card-stellar text-center hover:transform hover:-translate-y-1 transition-all scroll-scale-in scroll-stagger-item">
-            <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">ローコードAIエージェント開発</h3>
+            <p class="mb-4 text-gray-500 dark:text-gray-400">
+              Dify等のローコードツールを活用し、スピーディーかつ低コストでAIエージェントを構築します。
+            </p>
+            <ul class="mb-4 space-y-2 text-sm text-gray-500 dark:text-gray-400">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                最短2週間で導入
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                低コストで実現
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                運用引き継ぎ対応
+              </li>
+            </ul>
+            <a href="/pages/services/" class="inline-flex items-center text-blue-600 hover:underline dark:text-blue-500">
+              詳細を見る
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
               </svg>
-            </div>
-            <h3 class="text-lg font-bold mb-2">開発組織・人材育成</h3>
-            <p class="text-gray-600 text-sm">AI開発チームの立ち上げと内製化支援</p>
+            </a>
           </div>
         </div>
-        
-        <div class="text-center mt-12">
-          <a href="./services/" class="btn-primary-stellar inline-flex items-center gap-2">
-            サービス詳細を見る
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+
+        <!-- CTA -->
+        <div class="mt-12 text-center">
+          <a href="/pages/inquiry/" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 transition-colors">
+            サービスについて相談する
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
             </svg>
           </a>
         </div>
@@ -334,7 +441,7 @@
         </div>
         
         <div class="text-center mt-12">
-          <a href="./record/" class="btn-secondary-stellar inline-flex items-center gap-2">
+          <a href="/pages/record/" class="btn-secondary-stellar inline-flex items-center gap-2">
             実績詳細を見る
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -354,10 +461,10 @@
           まずは気軽にご相談ください。貴社の課題に合わせた最適なAI活用方法をご提案します。
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center scroll-fade-up">
-          <a href="./inquiry/" class="btn-accent-stellar text-lg px-8 py-4">
+          <a href="/pages/inquiry/" class="btn-accent-stellar text-lg px-8 py-4">
             無料相談を申し込む
           </a>
-          <a href="./services/" class="bg-white/20 backdrop-blur-sm text-white hover:bg-white hover:text-blue-600 font-medium px-8 py-4 rounded-md transition-all duration-300 inline-block">
+          <a href="/pages/services/" class="bg-white/20 backdrop-blur-sm text-white hover:bg-white hover:text-blue-600 font-medium px-8 py-4 rounded-md transition-all duration-300 inline-block">
             サービス資料をダウンロード
           </a>
         </div>
@@ -365,83 +472,10 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer bg-gray-900 text-white py-16 md:py-20">
-    <div class="container mx-auto px-4 md:px-6 lg:px-8">
-      <div class="footer-content grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12">
-        <!-- Company Info -->
-        <div>
-          <div class="mb-4">
-            <img src="./assets/images/logo/logo.png" alt="Stellar AIz" class="h-10 brightness-0 invert">
-          </div>
-          <p class="text-gray-300 mb-2">戦略と爆速開発で、AIの実践力を極める</p>
-          <p class="text-gray-400 text-sm">Stellar AIz</p>
-        </div>
-        
-        <!-- Sitemap -->
-        <div>
-          <h3 class="text-lg font-bold mb-4">サイトマップ</h3>
-          <nav aria-label="フッターナビゲーション">
-            <ul class="space-y-2">
-              <li><a href="./" class="text-gray-300 hover:text-white transition-colors">ホーム</a></li>
-              <li><a href="./services/" class="text-gray-300 hover:text-white transition-colors">サービス</a></li>
-              <li><a href="./record/" class="text-gray-300 hover:text-white transition-colors">実績</a></li>
-              <li><a href="./about/" class="text-gray-300 hover:text-white transition-colors">会社情報</a></li>
-              <li><a href="./news/" class="text-gray-300 hover:text-white transition-colors">ニュース</a></li>
-              <li><a href="./inquiry/" class="text-gray-300 hover:text-white transition-colors">お問い合わせ</a></li>
-            </ul>
-          </nav>
-        </div>
-        
-        <!-- Contact -->
-        <div>
-          <h3 class="text-lg font-bold mb-4">お問い合わせ</h3>
-          <p class="text-gray-300 mb-4">AI導入のご相談はお気軽に</p>
-          <a href="./inquiry/" class="btn-primary-stellar">
-            <svg class="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            お問い合わせはこちら
-          </a>
-        </div>
-      </div>
-      
-      <!-- Footer Bottom -->
-      <div class="footer-bottom pt-8 border-t border-gray-700">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-gray-400 text-sm">© 2025 Stellar AIz. All rights reserved.</p>
-          <div class="flex gap-6">
-            <a href="./privacy/" class="text-gray-400 hover:text-white text-sm transition-colors">プライバシーポリシー</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <!-- Footer Component -->
+  <div id="footer-placeholder"></div>
 
-  <!-- Mobile Menu Script -->
-  <script>
-    // Mobile menu toggle
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const navList = document.querySelector('.nav-list');
-    
-    mobileMenuToggle?.addEventListener('click', () => {
-      navList.classList.toggle('hidden');
-      navList.classList.toggle('absolute');
-      navList.classList.toggle('top-full');
-      navList.classList.toggle('left-0');
-      navList.classList.toggle('right-0');
-      navList.classList.toggle('bg-white');
-      navList.classList.toggle('shadow-lg');
-      navList.classList.toggle('flex-col');
-      navList.classList.toggle('p-4');
-      navList.classList.toggle('space-y-4');
-      navList.classList.toggle('mt-2');
-    });
-    
-    // Parallax initialization
-    if (window.innerWidth > 768) {
-      var rellax = new Rellax('.rellax');
-    }
-  </script>
+  <!-- Flowbite JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>
