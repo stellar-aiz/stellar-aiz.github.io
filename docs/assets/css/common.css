@@ -382,3 +382,65 @@ main {
     transform: translateX(-50%);
   }
 }
+
+/* ================================
+   メンバーマーキーアニメーション
+   ================================ */
+
+.member-marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.member-marquee-row {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: memberMarquee 60s linear infinite;
+}
+
+.member-marquee-row:hover {
+  animation-play-state: paused;
+}
+
+.member-marquee-item {
+  flex-shrink: 0;
+  width: 280px;
+}
+
+.member-marquee-card {
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+}
+
+.member-marquee-avatar {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto 1rem;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.member-marquee-avatar-placeholder {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto 1rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes memberMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
