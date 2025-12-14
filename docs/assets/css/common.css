@@ -342,9 +342,42 @@ main {
 /* prefers-reduced-motion対応 */
 @media (prefers-reduced-motion: reduce) {
   .hero-marquee-row,
+  .hero-marquee-mobile-row,
   .testimonial-marquee-row {
     animation: none !important;
   }
+}
+
+/* ================================
+   モバイル用ヒーローマーキー
+   ================================ */
+
+.hero-marquee-mobile {
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem 0;
+}
+
+.hero-marquee-mobile-row {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: marqueeLeft 25s linear infinite;
+}
+
+.hero-marquee-mobile-item {
+  flex-shrink: 0;
+  width: 200px;
+  height: 130px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-marquee-mobile-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ================================

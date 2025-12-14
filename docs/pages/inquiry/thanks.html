@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>送信完了 - Stellar AIz</title>
+  <meta name="robots" content="noindex">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind Config -->
+  <script src="/assets/js/tailwind-config.js"></script>
+
+  <!-- Flowbite CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Common CSS -->
+  <link rel="stylesheet" href="/assets/css/common.css">
+
+  <!-- Component Loader -->
+  <script src="/assets/js/components.js" defer></script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Header Component -->
+  <div id="header-placeholder"></div>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 pt-28 pb-16 overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+      </svg>
+    </div>
+
+    <div class="relative max-w-screen-xl px-4 mx-auto lg:px-6">
+      <div class="max-w-screen-md mx-auto text-center">
+        <div class="inline-flex items-center mb-6 px-4 py-2 text-sm font-medium text-blue-100 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          Complete
+        </div>
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-white md:text-5xl">
+          送信完了
+        </h1>
+        <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+          お問い合わせいただきありがとうございます
+        </p>
+      </div>
+    </div>
+
+    <!-- Wave Decoration -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-12 md:py-16 bg-white">
+    <div class="max-w-screen-md px-4 mx-auto lg:px-6">
+
+      <!-- Success Card -->
+      <div class="p-8 md:p-12 bg-white border border-gray-200 rounded-2xl shadow-sm text-center">
+        <!-- Success Icon -->
+        <div class="mx-auto mb-6 w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
+          <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">
+          お問い合わせを受け付けました
+        </h2>
+
+        <p class="text-gray-600 mb-8 leading-relaxed">
+          この度はお問い合わせいただき、誠にありがとうございます。<br>
+          内容を確認の上、担当者より<strong class="text-gray-900">2〜3営業日以内</strong>にご連絡いたします。
+        </p>
+
+        <!-- Info Box -->
+        <div class="p-4 bg-blue-50 rounded-xl border border-blue-100 mb-8 text-left">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <div>
+              <p class="text-sm font-medium text-blue-900 mb-1">確認メールについて</p>
+              <p class="text-xs text-blue-700">
+                ご入力いただいたメールアドレス宛に確認メールをお送りしました。<br>
+                届かない場合は、迷惑メールフォルダをご確認ください。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-center text-white rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 focus:ring-4 focus:ring-blue-300 transition-all duration-200">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+            </svg>
+            トップページへ戻る
+          </a>
+          <a href="/pages/services/" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-xl hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 transition-colors">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+            </svg>
+            サービス一覧を見る
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Component -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Flowbite JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
