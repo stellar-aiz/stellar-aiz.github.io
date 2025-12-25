@@ -29,6 +29,10 @@
     .ebisu-dark-bg {
       background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
     }
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
     /* Sidebar nav item */
     .nav-item {
       transition: all 0.2s;
@@ -40,12 +44,13 @@
       background: rgba(59, 130, 246, 0.2);
       border-left-color: rgb(59, 130, 246);
     }
-    /* Feature content */
-    .feature-content {
-      display: none;
+    /* Feature content - scroll offset for fixed header */
+    .feature-section {
+      scroll-margin-top: 6rem;
+      margin-bottom: 2rem;
     }
-    .feature-content.active {
-      display: block;
+    .feature-section:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
@@ -105,7 +110,7 @@
               <ul class="py-2">
                 <!-- 1. 顧客管理 -->
                 <li>
-                  <a href="#customer" class="nav-item active flex items-center px-4 py-3 text-white border-l-4 border-transparent" data-feature="customer">
+                  <a href="#customer" class="nav-item flex items-center px-4 py-3 text-gray-300 hover:text-white border-l-4 border-transparent" data-feature="customer">
                     <svg class="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                     </svg>
@@ -209,7 +214,7 @@
           <!-- Main Content Area -->
           <div class="flex-1 min-w-0">
             <!-- 顧客管理 -->
-            <article id="content-customer" class="feature-content active">
+            <article id="customer" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -273,7 +278,7 @@
             </article>
 
             <!-- Placeholder for other features -->
-            <article id="content-talent" class="feature-content">
+            <article id="talent" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -336,7 +341,7 @@
               </div>
             </article>
 
-            <article id="content-role" class="feature-content">
+            <article id="role" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -399,7 +404,7 @@
               </div>
             </article>
 
-            <article id="content-project" class="feature-content">
+            <article id="project" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -462,7 +467,7 @@
               </div>
             </article>
 
-            <article id="content-estimate" class="feature-content">
+            <article id="estimate" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -531,7 +536,7 @@
               </div>
             </article>
 
-            <article id="content-assignment" class="feature-content">
+            <article id="assignment" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -594,7 +599,7 @@
               </div>
             </article>
 
-            <article id="content-billing" class="feature-content">
+            <article id="billing" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -657,7 +662,7 @@
               </div>
             </article>
 
-            <article id="content-timesheet" class="feature-content">
+            <article id="timesheet" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -720,7 +725,7 @@
               </div>
             </article>
 
-            <article id="content-approval" class="feature-content">
+            <article id="approval" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -783,7 +788,7 @@
               </div>
             </article>
 
-            <article id="content-pl" class="feature-content">
+            <article id="pl" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -852,7 +857,7 @@
               </div>
             </article>
 
-            <article id="content-stellar-ai" class="feature-content">
+            <article id="stellar-ai" class="feature-section">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
                 <!-- Header -->
                 <div class="flex items-center mb-6">
@@ -974,10 +979,10 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const navItems = document.querySelectorAll('.nav-item');
-      const contents = document.querySelectorAll('.feature-content');
+      const sections = document.querySelectorAll('.feature-section');
 
-      function showFeature(featureId) {
-        // Update nav items
+      // Update active nav based on section
+      function setActiveNav(featureId) {
         navItems.forEach(item => {
           item.classList.remove('active', 'text-white');
           item.classList.add('text-gray-300');
@@ -987,39 +992,41 @@
           activeNav.classList.add('active', 'text-white');
           activeNav.classList.remove('text-gray-300');
         }
-
-        // Update content
-        contents.forEach(content => {
-          content.classList.remove('active');
-        });
-        const activeContent = document.getElementById(`content-${featureId}`);
-        if (activeContent) {
-          activeContent.classList.add('active');
-        }
       }
 
-      // Handle click events
-      navItems.forEach(item => {
-        item.addEventListener('click', function(e) {
-          e.preventDefault();
-          const featureId = this.dataset.feature;
-          showFeature(featureId);
-          // Update URL hash
-          history.pushState(null, '', `#${featureId}`);
+      // Intersection Observer for scroll spy
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -60% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const featureId = entry.target.id;
+            setActiveNav(featureId);
+            // Update URL hash without scrolling
+            history.replaceState(null, '', `#${featureId}`);
+          }
         });
+      }, observerOptions);
+
+      // Observe all sections
+      sections.forEach(section => {
+        observer.observe(section);
       });
 
-      // Handle initial hash
+      // Handle initial hash - scroll to section
       const hash = window.location.hash.slice(1);
       if (hash) {
-        showFeature(hash);
+        const targetSection = document.getElementById(hash);
+        if (targetSection) {
+          setTimeout(() => {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
       }
-
-      // Handle back/forward navigation
-      window.addEventListener('popstate', function() {
-        const hash = window.location.hash.slice(1) || 'customer';
-        showFeature(hash);
-      });
     });
   </script>
 </body>
