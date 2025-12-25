@@ -165,62 +165,148 @@
         </div>
 
         <!-- Feature Cards -->
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Feature 1 -->
-          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up scroll-stagger-1">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- 1. 顧客管理 -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
             <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-blue-900/50 border border-blue-700">
               <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
               </svg>
             </div>
-            <h3 class="mb-2 text-xl font-bold text-white">機能名 1</h3>
+            <h3 class="mb-2 text-xl font-bold text-white">顧客管理</h3>
             <p class="text-gray-400">
-              機能の説明文をここに記載します。ユーザーにとってのメリットを簡潔に伝えてください。
+              クライアント情報を一元管理。プロジェクトとの紐付けで案件別の取引実績を可視化
             </p>
-            <a href="features/" class="inline-flex items-center mt-4 text-blue-400 hover:text-blue-300 font-medium transition-colors">
-              詳しく見る
-              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
-              </svg>
-            </a>
           </div>
 
-          <!-- Feature 2 -->
-          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up scroll-stagger-2">
+          <!-- 2. タレント管理 -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
             <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-green-900/50 border border-green-700">
               <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-white">タレント管理</h3>
+            <p class="text-gray-400">
+              メンバーの単価・原価・所属会社を管理。見積作成時に自動で単価を反映
+            </p>
+          </div>
+
+          <!-- 3. ロール管理 -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-purple-900/50 border border-purple-700">
+              <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-white">ロール管理</h3>
+            <p class="text-gray-400">
+              コンサルタント、エンジニア等の職種を定義。見積の明細行に適用
+            </p>
+          </div>
+
+          <!-- 4. プロジェクト管理 -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-cyan-900/50 border border-cyan-700">
+              <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-white">プロジェクト管理</h3>
+            <p class="text-gray-400">
+              案件の基本情報を登録。顧客・期間・ステータスを一覧で把握
+            </p>
+          </div>
+
+          <!-- 5. 見積管理 -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-orange-900/50 border border-orange-700">
+              <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-white">見積管理</h3>
+            <p class="text-gray-400">
+              バージョン管理付きの見積作成。週次の工数配分と承認ワークフローを搭載
+            </p>
+          </div>
+
+          <!-- 6. 稼働管理 -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-pink-900/50 border border-pink-700">
+              <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-white">稼働管理</h3>
+            <p class="text-gray-400">
+              メンバーのアサイン状況を可視化。稼働率とリソース配分を最適化
+            </p>
+          </div>
+
+          <!-- 7. 請求管理 -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-indigo-900/50 border border-indigo-700">
+              <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-white">請求管理</h3>
+            <p class="text-gray-400">
+              承認済み見積に基づく請求スケジュール。月次・年次で請求予定を管理
+            </p>
+          </div>
+
+          <!-- 8. 実績入力 -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-teal-900/50 border border-teal-700">
+              <svg class="w-6 h-6 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-white">実績入力</h3>
+            <p class="text-gray-400">
+              タイムシート入力。日別の稼働時間を記録し、見積との差異を把握
+            </p>
+          </div>
+
+          <!-- 9. 実績承認 -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-rose-900/50 border border-rose-700">
+              <svg class="w-6 h-6 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
-            <h3 class="mb-2 text-xl font-bold text-white">機能名 2</h3>
+            <h3 class="mb-2 text-xl font-bold text-white">実績承認</h3>
             <p class="text-gray-400">
-              機能の説明文をここに記載します。ユーザーにとってのメリットを簡潔に伝えてください。
+              提出されたタイムシートを承認・差戻し。工数管理のガバナンスを強化
             </p>
-            <a href="features/" class="inline-flex items-center mt-4 text-blue-400 hover:text-blue-300 font-medium transition-colors">
-              詳しく見る
-              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
-              </svg>
-            </a>
           </div>
 
-          <!-- Feature 3 -->
-          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up scroll-stagger-3">
-            <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-purple-900/50 border border-purple-700">
-              <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+          <!-- 10. 管理PL -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-amber-900/50 border border-amber-700">
+              <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
               </svg>
             </div>
-            <h3 class="mb-2 text-xl font-bold text-white">機能名 3</h3>
+            <h3 class="mb-2 text-xl font-bold text-white">管理PL</h3>
             <p class="text-gray-400">
-              機能の説明文をここに記載します。ユーザーにとってのメリットを簡潔に伝えてください。
+              プロジェクト別・メンバー別の収益分析。売上・原価・粗利をリアルタイム表示
             </p>
-            <a href="features/" class="inline-flex items-center mt-4 text-blue-400 hover:text-blue-300 font-medium transition-colors">
-              詳しく見る
-              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </div>
+
+          <!-- 11. Stellar AI -->
+          <div class="ebisu-card p-6 rounded-xl transition-all scroll-fade-up">
+            <div class="w-12 h-12 mb-4 flex items-center justify-center rounded-lg bg-violet-900/50 border border-violet-700">
+              <svg class="w-6 h-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
               </svg>
-            </a>
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-white">Stellar AI</h3>
+            <p class="text-gray-400">
+              AIエージェントに質問するだけで収益データを分析。自然言語で洞察を取得
+            </p>
           </div>
         </div>
 
