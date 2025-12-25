@@ -854,6 +854,7 @@
 
             <article id="content-stellar-ai" class="feature-content">
               <div class="bg-slate-900/50 rounded-xl border border-slate-700 p-6 md:p-8">
+                <!-- Header -->
                 <div class="flex items-center mb-6">
                   <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-violet-900/50 border border-violet-700 mr-4">
                     <svg class="w-7 h-7 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -865,7 +866,74 @@
                     <p class="text-gray-400">AI-Powered Analytics</p>
                   </div>
                 </div>
-                <p class="text-gray-400">詳細コンテンツは準備中です。</p>
+
+                <!-- Description -->
+                <div class="prose prose-invert max-w-none mb-8">
+                  <p class="text-lg text-gray-300 leading-relaxed">
+                    AIエージェントに自然言語で質問するだけで、収益データを分析・回答するコパイロット機能です。複雑なレポート作成や集計作業を自動化し、データに基づいた意思決定を加速します。
+                  </p>
+                </div>
+
+                <!-- Features -->
+                <div class="mb-8">
+                  <h3 class="text-lg font-semibold text-white mb-4">主な機能</h3>
+                  <ul class="space-y-3">
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 mr-3 text-green-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-300">自然言語でのP&Lデータ問い合わせ</span>
+                    </li>
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 mr-3 text-green-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-300">プロジェクト別・タレント別の収益分析</span>
+                    </li>
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 mr-3 text-green-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-300">期間フィルターと連動したコンテキスト理解</span>
+                    </li>
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 mr-3 text-green-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-300">マルチターンの対話による深掘り分析</span>
+                    </li>
+                    <li class="flex items-start">
+                      <svg class="w-5 h-5 mr-3 text-green-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="text-gray-300">金額の桁区切りフォーマットによる見やすい回答</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Example Queries -->
+                <div class="mb-8">
+                  <h3 class="text-lg font-semibold text-white mb-4">質問例</h3>
+                  <div class="space-y-2">
+                    <div class="bg-slate-800 rounded-lg px-4 py-2 text-gray-300 text-sm">
+                      「今月の粗利率を教えて」
+                    </div>
+                    <div class="bg-slate-800 rounded-lg px-4 py-2 text-gray-300 text-sm">
+                      「どのプロジェクトが一番利益に貢献している？」
+                    </div>
+                    <div class="bg-slate-800 rounded-lg px-4 py-2 text-gray-300 text-sm">
+                      「田中さんの売上貢献額は？」
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Use Case -->
+                <div class="bg-slate-800/50 rounded-lg p-6 border border-slate-600">
+                  <h3 class="text-lg font-semibold text-white mb-3">活用シーン</h3>
+                  <p class="text-gray-400">
+                    経営者やマネージャーが、レポート画面を操作せずに知りたい情報を即座に取得。「この案件の利益率は？」と聞くだけで、AIがデータを分析して回答します。データ分析のハードルを下げ、全員がデータドリブンな意思決定を行えます。
+                  </p>
+                </div>
               </div>
             </article>
           </div>
