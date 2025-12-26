@@ -19,26 +19,6 @@
         ]
       }
     ],
-    "PostToolUse": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "afplay develop/sounds/transition.wav"
-          }
-        ]
-      }
-    ],
-    "PostToolUseFailure": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "afplay develop/sounds/whoosh.wav"
-          }
-        ]
-      }
-    ],
     "Stop": [
       {
         "hooks": [
