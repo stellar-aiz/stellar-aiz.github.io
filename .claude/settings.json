@@ -1,0 +1,71 @@
+{
+  "env": {
+    "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "true"
+  },
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "FileRead",
+      "FileWrite",
+      "ToolSearch",
+
+      "Bash(mkdir:*)",
+      "Bash(find:*)",
+      "Bash(cp:*)",
+      "Bash(cat:*)",
+      "Bash(sed:*)",
+      "Bash(node:*)",
+
+      "Bash(git log:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git push:*)",
+
+      "Bash(gh pr:*)",
+      "Bash(gh api:*)",
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)",
+
+      "Bash(pnpm:*)",
+      "Bash(uv:*)"
+    ],
+    "deny": [
+      "Bash(npm:*)",
+      "Bash(yarn:*)",
+      "Bash(pip:*)",
+      "Bash(pip3:*)",
+
+      "Bash(git tag:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)"
+    ],
+    "ask": [
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash(git commit*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/test.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/format.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "includeCoAuthoredBy": false,
+  "plansDirectory": "./knowledge/plans/claude"
+}
