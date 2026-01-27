@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プロダクト - Stellar AIz</title>
+  <meta name="description" content="Stellar AIzが提供するAIプロダクト一覧。プロジェクト収益管理のステラ・エコノミクス、AIケース面接トレーニングのステラ・コーチをご紹介します。">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind Config -->
+  <script src="/assets/js/tailwind-config.js"></script>
+
+  <!-- Flowbite CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Common CSS -->
+  <link rel="stylesheet" href="/assets/css/common.css">
+
+  <!-- Component Loader -->
+  <script src="/assets/js/components.js" defer></script>
+
+  <!-- Scroll Animations -->
+  <script src="/assets/js/scroll-animations.js" defer></script>
+
+  <style>
+    /* Light mode base styles for products page */
+    .products-hero-bg {
+      background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 50%, #ffffff 100%);
+    }
+    /* Product card styles */
+    .product-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      transition: all 0.3s ease;
+    }
+    .product-card:hover {
+      border-color: rgba(59, 130, 246, 0.4);
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1), 0 0 20px rgba(59, 130, 246, 0.05);
+      transform: translateY(-4px);
+    }
+    /* Browser mockup styles for product cards */
+    .browser-mockup-card {
+      box-shadow:
+        0 0 0 1px rgba(148, 163, 184, 0.3),
+        0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    .product-card:hover .browser-mockup-card {
+      box-shadow:
+        0 0 0 1px rgba(59, 130, 246, 0.4),
+        0 15px 30px -5px rgba(0, 0, 0, 0.15);
+    }
+    /* Ebisu card accent */
+    .product-card-ebisu:hover {
+      border-color: rgba(59, 130, 246, 0.5);
+    }
+    .product-card-ebisu:hover .browser-mockup-card {
+      box-shadow:
+        0 0 0 1px rgba(59, 130, 246, 0.4),
+        0 15px 30px -5px rgba(59, 130, 246, 0.1);
+    }
+    /* Tenjin card accent */
+    .product-card-tenjin:hover {
+      border-color: rgba(16, 185, 129, 0.5);
+    }
+    .product-card-tenjin:hover .browser-mockup-card {
+      box-shadow:
+        0 0 0 1px rgba(16, 185, 129, 0.4),
+        0 15px 30px -5px rgba(16, 185, 129, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header Component -->
+  <div id="header-placeholder"></div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="products-hero-bg pt-28 pb-16 md:pt-36 md:pb-20">
+      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
+        <!-- Centered Text Content -->
+        <div class="text-center max-w-3xl mx-auto">
+          <span class="inline-flex items-center mb-6 px-4 py-1.5 text-sm font-medium text-blue-700 bg-blue-100 rounded-full border border-blue-300">
+            <svg class="w-3.5 h-3.5 mr-1.5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/>
+            </svg>
+            Products
+          </span>
+          <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-tight md:text-5xl lg:text-6xl text-gray-900">
+            プロダクト
+          </h1>
+          <p class="text-lg md:text-xl font-light text-gray-600 max-w-2xl mx-auto">
+            Stellar AIzが開発・提供するAIプロダクト。業務効率化からスキル開発まで、AIの力でビジネスを加速します。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
+        <!-- Section Header -->
+        <div class="max-w-screen-md mx-auto text-center mb-12 scroll-fade-up">
+          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full border border-gray-200">
+            SaaS Products
+          </span>
+          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
+            SaaSプロダクト
+          </h2>
+          <p class="text-lg text-gray-600">
+            企業の課題解決を支援するAI搭載プロダクト
+          </p>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- Stellar Economics (ebisu) -->
+          <a href="/pages/products/ebisu/" class="product-card product-card-ebisu rounded-xl overflow-hidden scroll-fade-up block">
+            <!-- Browser Mockup Preview -->
+            <div class="browser-mockup-card rounded-t-xl overflow-hidden bg-slate-800">
+              <!-- Browser Header -->
+              <div class="flex items-center justify-between px-4 py-2.5 bg-slate-700 border-b border-slate-600">
+                <!-- Window Controls -->
+                <div class="flex items-center space-x-1.5">
+                  <span class="w-2.5 h-2.5 bg-red-500 rounded-full"></span>
+                  <span class="w-2.5 h-2.5 bg-yellow-500 rounded-full"></span>
+                  <span class="w-2.5 h-2.5 bg-green-500 rounded-full"></span>
+                </div>
+                <!-- URL Bar -->
+                <div class="flex-1 mx-3">
+                  <div class="flex items-center bg-slate-800 rounded px-2 py-1 max-w-xs mx-auto">
+                    <svg class="w-3 h-3 text-gray-500 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                    <span class="text-xs text-gray-400 truncate">economics.stellar-aiz.com</span>
+                  </div>
+                </div>
+                <div class="w-12"></div>
+              </div>
+              <!-- Browser Content - Screenshot -->
+              <div class="relative aspect-[16/9] bg-slate-900">
+                <img src="/assets/images/products/ebisu-screenshot.png" alt="ステラ・エコノミクス スクリーンショット" class="w-full h-full object-cover object-top">
+              </div>
+            </div>
+            <!-- Product Info -->
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-100 mr-3">
+                  <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900">ステラ・エコノミクス</h3>
+                  <span class="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded">Stellar Economics</span>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-4">
+                コンサルティングプロジェクトの収益を一元管理。AIエージェントがP&Lデータを分析し、プロジェクトの収益性をリアルタイムで可視化します。
+              </p>
+              <div class="flex items-center text-blue-600 font-medium">
+                詳細を見る
+                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Stellar Coach (tenjin) -->
+          <a href="/pages/products/tenjin/" class="product-card product-card-tenjin rounded-xl overflow-hidden scroll-fade-up block">
+            <!-- Browser Mockup Preview -->
+            <div class="browser-mockup-card rounded-t-xl overflow-hidden bg-white">
+              <!-- Browser Header -->
+              <div class="flex items-center justify-between px-4 py-2.5 bg-gray-100 border-b border-gray-200">
+                <!-- Window Controls -->
+                <div class="flex items-center space-x-1.5">
+                  <span class="w-2.5 h-2.5 bg-red-500 rounded-full"></span>
+                  <span class="w-2.5 h-2.5 bg-yellow-500 rounded-full"></span>
+                  <span class="w-2.5 h-2.5 bg-green-500 rounded-full"></span>
+                </div>
+                <!-- URL Bar -->
+                <div class="flex-1 mx-3">
+                  <div class="flex items-center bg-white border border-gray-200 rounded px-2 py-1 max-w-xs mx-auto">
+                    <svg class="w-3 h-3 text-gray-400 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                    <span class="text-xs text-gray-500 truncate">coach.stellar-aiz.com</span>
+                  </div>
+                </div>
+                <div class="w-12"></div>
+              </div>
+              <!-- Browser Content - Screenshot -->
+              <div class="relative aspect-[16/9] bg-gray-100">
+                <img src="/assets/images/products/tenjin-screenshot.png" alt="ステラ・コーチ スクリーンショット" class="w-full h-full object-cover object-top">
+              </div>
+            </div>
+            <!-- Product Info -->
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-emerald-100 mr-3">
+                  <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900">ステラ・コーチ</h3>
+                  <span class="text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Stellar Coach</span>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-4">
+                AIを活用したケース面接トレーニングプラットフォーム。戦略コンサル出身者が監修したAI面接官と対話練習し、合格確率を高めます。
+              </p>
+              <div class="flex items-center text-emerald-600 font-medium">
+                詳細を見る
+                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <div class="max-w-screen-xl px-4 mx-auto lg:px-6 text-center">
+        <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-white md:text-4xl scroll-fade-up">
+          プロダクトについてのお問い合わせ
+        </h2>
+        <p class="mb-8 text-lg text-blue-100 scroll-fade-up">
+          導入のご相談・デモのご依頼はお気軽にどうぞ
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center scroll-fade-up">
+          <a href="/pages/inquiry/" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-blue-700 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-blue-200 transition-colors">
+            お問い合わせ
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Flowbite JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
