@@ -8,26 +8,5 @@
     "deny": []
   },
   "hooks": {
-    "Notification": [
-      {
-        "matcher": "permission_prompt",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "afplay develop/sounds/bell.wav"
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "afplay develop/sounds/whoosh.wav"
-          }
-        ]
-      }
-    ]
   }
 }
