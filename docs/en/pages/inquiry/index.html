@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お問い合わせ - Stellar AIz</title>
-  <meta name="description" content="ステラアイズ株式会社へのお問い合わせ。AI・DXに関するご相談、サービスに関するお問い合わせはこちらから。">
+  <title>Contact Us - Stellar AIz</title>
+  <meta name="description" content="Contact Stellar AIz Inc. for inquiries about AI and DX solutions. Get in touch with us for consultations and service inquiries.">
 
-  <!-- hreflang -->
-  <link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/inquiry/">
-  <link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/inquiry/">
-  <link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/inquiry/">
+  <!-- Canonical & Hreflang -->
+  <link rel="canonical" href="https://stellar-aiz.github.io/en/pages/inquiry/">
+  <link rel="alternate" hreflang="ja" href="https://stellar-aiz.github.io/pages/inquiry/">
+  <link rel="alternate" hreflang="en" href="https://stellar-aiz.github.io/en/pages/inquiry/">
+  <link rel="alternate" hreflang="x-default" href="https://stellar-aiz.github.io/pages/inquiry/">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
@@ -26,7 +27,7 @@
   <!-- Common CSS -->
   <link rel="stylesheet" href="/assets/css/common.css">
 
-  <!-- i18n -->
+  <!-- i18n Module -->
   <script src="/assets/js/i18n.js"></script>
 
   <!-- Component Loader -->
@@ -59,7 +60,7 @@
           Contact Us
         </div>
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-white md:text-5xl">
-          お問い合わせ
+          Contact Us
         </h1>
       </div>
     </div>
@@ -80,92 +81,92 @@
                 </svg>
               </div>
               <div>
-                <h2 class="text-xl font-bold text-gray-900">お問い合わせフォーム</h2>
-                <p class="text-sm text-gray-500">必要事項をご入力の上、送信してください</p>
+                <h2 class="text-xl font-bold text-gray-900">Contact Form</h2>
+                <p class="text-sm text-gray-500">Please fill in the required information and submit</p>
               </div>
             </div>
 
             <form action="https://formspree.io/f/manrvzgw" method="POST" class="space-y-6">
               <!-- Formspree Settings -->
-              <input type="hidden" name="_subject" value="【Stellar AIz】お問い合わせがありました">
-              <input type="hidden" name="_next" value="https://stellar-aiz.github.io/pages/inquiry/thanks.html">
+              <input type="hidden" name="_subject" value="[Stellar AIz] New Inquiry">
+              <input type="hidden" name="_next" value="https://stellar-aiz.github.io/en/pages/inquiry/thanks.html">
               <input type="text" name="_gotcha" style="display:none">
 
               <!-- Name Fields -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900">
-                    姓 <span class="text-red-500">*</span>
+                    Last Name <span class="text-red-500">*</span>
                   </label>
-                  <input type="text" id="last-name" name="姓" required
+                  <input type="text" id="last-name" name="Last Name" required
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                    placeholder="山田">
+                    placeholder="Smith">
                 </div>
                 <div>
                   <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900">
-                    名 <span class="text-red-500">*</span>
+                    First Name <span class="text-red-500">*</span>
                   </label>
-                  <input type="text" id="first-name" name="名" required
+                  <input type="text" id="first-name" name="First Name" required
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                    placeholder="太郎">
+                    placeholder="John">
                 </div>
               </div>
 
               <!-- Company -->
               <div>
                 <label for="company" class="block mb-2 text-sm font-medium text-gray-900">
-                  会社名
+                  Company
                 </label>
-                <input type="text" id="company" name="会社名"
+                <input type="text" id="company" name="Company"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                  placeholder="株式会社〇〇">
+                  placeholder="ABC Corporation">
               </div>
 
               <!-- Email -->
               <div>
                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900">
-                  メールアドレス <span class="text-red-500">*</span>
+                  Email Address <span class="text-red-500">*</span>
                 </label>
                 <input type="email" id="email" name="email" required
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                  placeholder="example@company.co.jp">
+                  placeholder="example@company.com">
               </div>
 
               <!-- Phone -->
               <div>
                 <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">
-                  電話番号
+                  Phone Number
                 </label>
-                <input type="tel" id="phone" name="電話番号"
+                <input type="tel" id="phone" name="Phone Number"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                  placeholder="03-1234-5678">
+                  placeholder="+1-555-123-4567">
               </div>
 
               <!-- Inquiry Type -->
               <div>
                 <label for="inquiry-type" class="block mb-2 text-sm font-medium text-gray-900">
-                  お問い合わせ種別 <span class="text-red-500">*</span>
+                  Inquiry Type <span class="text-red-500">*</span>
                 </label>
-                <select id="inquiry-type" name="お問い合わせ種別" required
+                <select id="inquiry-type" name="Inquiry Type" required
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3">
-                  <option value="" selected disabled>選択してください</option>
-                  <option value="サービスに関するお問い合わせ">サービスに関するお問い合わせ</option>
-                  <option value="AI・DXに関するご相談">AI・DXに関するご相談</option>
-                  <option value="パートナーシップ・協業について">パートナーシップ・協業について</option>
-                  <option value="採用に関するお問い合わせ">採用に関するお問い合わせ</option>
-                  <option value="取材・メディア掲載について">取材・メディア掲載について</option>
-                  <option value="その他">その他</option>
+                  <option value="" selected disabled>Please select</option>
+                  <option value="Service Inquiry">Service Inquiry</option>
+                  <option value="AI/DX Consultation">AI/DX Consultation</option>
+                  <option value="Partnership/Collaboration">Partnership/Collaboration</option>
+                  <option value="Career/Recruitment">Career/Recruitment</option>
+                  <option value="Media/Press Inquiry">Media/Press Inquiry</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
 
               <!-- Message -->
               <div>
                 <label for="message" class="block mb-2 text-sm font-medium text-gray-900">
-                  お問い合わせ内容 <span class="text-red-500">*</span>
+                  Message <span class="text-red-500">*</span>
                 </label>
-                <textarea id="message" name="お問い合わせ内容" rows="6" required
+                <textarea id="message" name="Message" rows="6" required
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                  placeholder="お問い合わせ内容をご記入ください"></textarea>
+                  placeholder="Please describe your inquiry"></textarea>
               </div>
 
               <!-- Privacy Policy Agreement -->
@@ -176,7 +177,7 @@
                       class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300">
                   </div>
                   <label for="privacy" class="ml-3 text-sm text-gray-700">
-                    <a href="/pages/privacy/" class="text-blue-600 hover:underline font-medium">プライバシーポリシー</a>に同意の上、送信してください。
+                    I agree to the <a href="/en/pages/privacy/" class="text-blue-600 hover:underline font-medium">Privacy Policy</a> before submitting.
                     <span class="text-red-500">*</span>
                   </label>
                 </div>
@@ -188,11 +189,11 @@
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
                 </svg>
-                送信する
+                Submit
               </button>
 
               <p class="text-xs text-gray-500 text-center">
-                通常、2〜3営業日以内にご返信いたします。
+                We typically respond within 2-3 business days.
               </p>
             </form>
           </div>
@@ -210,7 +211,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                   </svg>
                 </div>
-                <h3 class="text-lg font-bold">会社情報</h3>
+                <h3 class="text-lg font-bold">Company Information</h3>
               </div>
 
               <div class="space-y-4">
@@ -219,8 +220,8 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                   </svg>
                   <div>
-                    <p class="text-xs text-blue-200 mb-1">会社名</p>
-                    <p class="font-medium">ステラアイズ株式会社</p>
+                    <p class="text-xs text-blue-200 mb-1">Company Name</p>
+                    <p class="font-medium">Stellar AIz Inc.</p>
                   </div>
                 </div>
 
@@ -230,8 +231,8 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                   </svg>
                   <div>
-                    <p class="text-xs text-blue-200 mb-1">所在地</p>
-                    <p class="font-medium text-sm leading-relaxed">東京都品川区上大崎3丁目2番1号<br>目黒センタービル8階 SENQ目黒</p>
+                    <p class="text-xs text-blue-200 mb-1">Location</p>
+                    <p class="font-medium text-sm leading-relaxed">SENQ Meguro, 8F Meguro Center Bldg.<br>3-2-1 Kamiosaki, Shinagawa-ku, Tokyo</p>
                   </div>
                 </div>
               </div>
@@ -245,21 +246,21 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900">よくある質問</h3>
+                <h3 class="text-lg font-bold text-gray-900">Frequently Asked Questions</h3>
               </div>
 
               <div class="space-y-3">
                 <div class="p-3 bg-white rounded-lg border border-gray-100">
-                  <p class="text-sm font-medium text-gray-900 mb-1">回答までどのくらいかかりますか？</p>
-                  <p class="text-xs text-gray-500">通常2〜3営業日以内にご返信いたします。</p>
+                  <p class="text-sm font-medium text-gray-900 mb-1">How long until I receive a response?</p>
+                  <p class="text-xs text-gray-500">We typically respond within 2-3 business days.</p>
                 </div>
                 <div class="p-3 bg-white rounded-lg border border-gray-100">
-                  <p class="text-sm font-medium text-gray-900 mb-1">相談は無料ですか？</p>
-                  <p class="text-xs text-gray-500">初回のご相談は無料です。お気軽にお問い合わせください。</p>
+                  <p class="text-sm font-medium text-gray-900 mb-1">Is the initial consultation free?</p>
+                  <p class="text-xs text-gray-500">Yes, the initial consultation is free. Please feel free to contact us.</p>
                 </div>
                 <div class="p-3 bg-white rounded-lg border border-gray-100">
-                  <p class="text-sm font-medium text-gray-900 mb-1">対応エリアはどこですか？</p>
-                  <p class="text-xs text-gray-500">全国対応しております。オンラインでの打ち合わせも可能です。</p>
+                  <p class="text-sm font-medium text-gray-900 mb-1">What areas do you serve?</p>
+                  <p class="text-xs text-gray-500">We serve clients worldwide. Online meetings are also available.</p>
                 </div>
               </div>
             </div>
@@ -271,9 +272,9 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                 </svg>
                 <div>
-                  <p class="text-sm font-medium text-blue-900 mb-1">個人情報の取り扱い</p>
+                  <p class="text-sm font-medium text-blue-900 mb-1">Handling of Personal Information</p>
                   <p class="text-xs text-blue-700">
-                    ご入力いただいた情報は、<a href="/pages/privacy/" class="underline hover:no-underline">プライバシーポリシー</a>に基づき適切に管理いたします。
+                    Your information will be managed appropriately in accordance with our <a href="/en/pages/privacy/" class="underline hover:no-underline">Privacy Policy</a>.
                   </p>
                 </div>
               </div>
