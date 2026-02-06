@@ -92,6 +92,13 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- Products - Index -->
+  <url>
+    <loc>https://stellar-aiz.com/pages/products/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Products - Stellar Economics (Ebisu) -->
   <url>
     <loc>https://stellar-aiz.com/pages/products/ebisu/</loc>
