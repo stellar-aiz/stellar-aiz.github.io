@@ -53,6 +53,11 @@ class ComponentLoader {
       return;
     }
 
+    // Skip fetch if content was already injected by build script
+    if (placeholder.children.length > 0) {
+      return;
+    }
+
     const file = this.getComponentFile(name);
 
     try {

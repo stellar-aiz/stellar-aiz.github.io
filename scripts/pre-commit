@@ -1,0 +1,8 @@
+#!/bin/bash
+# Pre-commit hook: inline components into HTML pages
+# This ensures navigation links are present in static HTML for SEO
+
+node scripts/inline-components.js
+
+# Stage any files that were updated by the script
+git diff --name-only docs/ | xargs -r git add
