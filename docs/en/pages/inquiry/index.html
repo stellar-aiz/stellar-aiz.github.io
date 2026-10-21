@@ -1,478 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Stellar AIz</title>
-  <meta name="description" content="Contact Stellar AIz Inc. for inquiries about AI and DX solutions. Get in touch with us for consultations and service inquiries.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Stellar AIz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Contact Stellar AIz about AI strategy, AI agent development or a doggies demo.">
+<meta name="theme-color" content="#051C2C">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://stellar-aiz.com/en/pages/inquiry/">
+<link rel="canonical" href="https://stellar-aiz.com/en/pages/inquiry/">
+<link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/inquiry/">
+<link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/inquiry/">
+<link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/inquiry/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stellar AIz">
+<meta property="og:url" content="https://stellar-aiz.com/en/pages/inquiry/">
+<meta property="og:image" content="https://stellar-aiz.com/assets/img/og.jpg">
+<meta property="og:description" content="Contact Stellar AIz about AI strategy, AI agent development or a doggies demo.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../assets/icons/favicon.ico" sizes="32x32">
+<link rel="icon" href="../../../assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../assets/icons/apple-touch-icon.png">
+<link rel="preload" as="image" href="../../../assets/img/hero-1600.webp" type="image/webp" media="(min-width:801px)"><link rel="preload" as="image" href="../../../assets/img/hero-960.webp" type="image/webp" media="(max-width:800px)">
+<link rel="stylesheet" href="../../../assets/css/site.css">
 
-  <!-- Hreflang -->
-  <link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/inquiry/">
-  <link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/inquiry/">
-  <link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/inquiry/">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Custom Tailwind Config -->
-  <script src="/assets/js/tailwind-config.js"></script>
-
-  <!-- Flowbite CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-
-  <!-- Common CSS -->
-  <link rel="stylesheet" href="/assets/css/common.css">
-
-  <!-- i18n Module -->
-  <script src="/assets/js/i18n.js"></script>
-
-  <!-- Component Loader -->
-  <script src="/assets/js/components.js" defer></script>
 </head>
-<body class="bg-white text-gray-800">
-  <!-- Header Component -->
-  <div id="header-placeholder">
-<!-- COMPONENT:header-placeholder:START -->
-<!-- Header Navigation (Flowbite Navbar) - English -->
-<nav class="bg-white/95 backdrop-blur-md fixed w-full z-50 top-0 start-0 border-b border-gray-200 shadow-sm">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <!-- Logo -->
-    <a href="/en/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="/assets/images/logo/stellar-aiz-logo-dark-2.svg" class="h-6" alt="Stellar AIz" />
-    </a>
-
-    <!-- CTA Button, Language Toggle & Mobile Toggle -->
-    <div class="flex md:order-2 md:ml-auto items-center space-x-3 md:space-x-4 rtl:space-x-reverse">
-      <!-- Language Toggle -->
-      <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-        <button onclick="i18n.switchLanguage('ja')" class="px-2 py-1 text-xs font-medium bg-white text-gray-700 hover:bg-gray-100 transition-colors" aria-label="日本語に切り替え">
-          JP
-        </button>
-        <button onclick="i18n.switchLanguage('en')" class="px-2 py-1 text-xs font-medium bg-blue-600 text-white" aria-label="Switch to English">
-          EN
-        </button>
-      </div>
-      <a href="/en/pages/inquiry/" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors">
-        Contact Us
-      </a>
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:ml-8" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
-        <li>
-          <a href="/en/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="home">Home</a>
-        </li>
-        <li>
-          <a href="/en/#services" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="services">Services</a>
-        </li>
-        <li>
-          <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown" class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors">
-            Products
-            <svg class="w-2.5 h-2.5 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <a href="/en/pages/record/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="record">Case Studies</a>
-        </li>
-        <li>
-          <a href="/en/#company" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="about">About</a>
-        </li>
-        <li>
-          <a href="/en/pages/news/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="news">News</a>
-        </li>
-      </ul>
-    </div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="../../" class="logo" aria-label="Stellar AIz home"><img src="../../../assets/img/logo-white.svg" alt="Stellar AIz" width="128" height="24"></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="../services/">Services</a><a href="../doggies/">doggies</a><a href="../record/">Our Work</a><a href="../members/">People</a><a href="../news/">News</a><a href="../about/">Company</a>
+      <span class="lang" aria-label="Language"><a href="../../../pages/inquiry/" lang="ja" hreflang="ja">JP</a><i>/</i><b aria-current="true">EN</b></span>
+      <a href="./" class="btn btn-blue">Contact</a>
+    </nav>
   </div>
-  <!-- Mega Menu Dropdown -->
-  <div id="mega-menu-dropdown" class="hidden border-t border-gray-200 shadow-lg bg-white border-b">
-    <div class="max-w-screen-xl px-4 py-5 mx-auto md:px-6">
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- SaaS Products -->
-        <div>
-          <h3 class="mb-4 text-sm font-semibold text-gray-500 uppercase tracking-wider">SaaS Products</h3>
-          <ul class="space-y-3">
-            <li>
-              <a href="/en/pages/products/ebisu/" class="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors group">
-                <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-blue-100 group-hover:bg-blue-200 transition-colors">
-                  <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <div class="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">Stellar Economics</div>
-                  <p class="mt-1 text-sm text-gray-500">Unified project revenue management with AI-powered profitability analysis</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/en/pages/products/tenjin/" class="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors group">
-                <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-emerald-100 group-hover:bg-emerald-200 transition-colors">
-                  <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <div class="text-base font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">Stellar Coach</div>
-                  <p class="mt-1 text-sm text-gray-500">AI case interview training supervised by former strategy consultants</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+</header>
+<main id="main">
+
+<div class="phero">
+  <div class="wrap">
+    <div class="crumb"><a href="../../">Home</a> ／ Contact</div>
+    <div class="eyebrow">Contact</div>
+    <h1 class="h1">Contact</h1>
+    <p class="lead">For AI strategy, AI agent development, a doggies demo or anything else, we would be glad to hear from you.</p>
   </div>
-</nav>
-<!-- COMPONENT:header-placeholder:END -->
 </div>
 
-  <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 pt-28 pb-16 overflow-hidden">
-    <!-- Background Pattern -->
-    <div class="absolute inset-0 opacity-10">
-      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
-      </svg>
-    </div>
+<section class="sec soft">
+  <div class="wrap contact">
+    <aside>
+      <h2 class="h3">Contact form</h2>
+      <p>Fill in the form and send it to us. We usually reply within two to three business days. You can also request a doggies demo here.</p>
+      <dl>
+        <div><dt>Address</dt><dd>Meguro Center Building 8F<br>3-2-1 Kamiosaki, Shinagawa-ku<br>Tokyo 141-0021, Japan</dd></div>
+      </dl>
+    </aside>
 
-    <div class="relative max-w-screen-xl px-4 mx-auto lg:px-6">
-      <div class="max-w-screen-md mx-auto text-center">
-        <div class="inline-flex items-center mb-6 px-4 py-2 text-sm font-medium text-blue-100 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-          </svg>
-          Contact Us
+    <div class="form" id="formBox">
+      <!-- 送信先・項目名は現行サイトの英語版フォーム（/en/pages/inquiry/）と同じ -->
+      <form id="contactForm" action="https://formspree.io/f/manrvzgw" method="POST">
+        <input type="hidden" name="_subject" value="[Stellar AIz] New Inquiry">
+        <input type="hidden" name="_next" value="https://stellar-aiz.com/en/pages/inquiry/thanks.html">
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="two">
+          <div class="field"><label for="last-name">Last name <span class="req">Required</span></label><input type="text" id="last-name" name="Last Name" required autocomplete="family-name" placeholder="Smith"></div>
+          <div class="field"><label for="first-name">First name <span class="req">Required</span></label><input type="text" id="first-name" name="First Name" required autocomplete="given-name" placeholder="Alex"></div>
         </div>
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-white md:text-5xl">
-          Contact Us
-        </h1>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Content -->
-  <section class="py-12 md:py-16 bg-white">
-    <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-      <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
-
-        <!-- Contact Form -->
-        <main class="flex-1 min-w-0">
-          <div class="p-6 md:p-8 bg-white border border-gray-200 rounded-2xl shadow-sm">
-            <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-              <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
-                </svg>
-              </div>
-              <div>
-                <h2 class="text-xl font-bold text-gray-900">Contact Form</h2>
-                <p class="text-sm text-gray-500">Please fill in the required information and submit</p>
-              </div>
-            </div>
-
-            <form action="https://formspree.io/f/manrvzgw" method="POST" class="space-y-6">
-              <!-- Formspree Settings -->
-              <input type="hidden" name="_subject" value="[Stellar AIz] New Inquiry">
-              <input type="hidden" name="_next" value="https://stellar-aiz.com/en/pages/inquiry/thanks.html">
-              <input type="text" name="_gotcha" style="display:none">
-
-              <!-- Name Fields -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900">
-                    Last Name <span class="text-red-500">*</span>
-                  </label>
-                  <input type="text" id="last-name" name="Last Name" required
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                    placeholder="Smith">
-                </div>
-                <div>
-                  <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900">
-                    First Name <span class="text-red-500">*</span>
-                  </label>
-                  <input type="text" id="first-name" name="First Name" required
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                    placeholder="John">
-                </div>
-              </div>
-
-              <!-- Company -->
-              <div>
-                <label for="company" class="block mb-2 text-sm font-medium text-gray-900">
-                  Company
-                </label>
-                <input type="text" id="company" name="Company"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                  placeholder="ABC Corporation">
-              </div>
-
-              <!-- Email -->
-              <div>
-                <label for="email" class="block mb-2 text-sm font-medium text-gray-900">
-                  Email Address <span class="text-red-500">*</span>
-                </label>
-                <input type="email" id="email" name="email" required
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                  placeholder="example@company.com">
-              </div>
-
-              <!-- Phone -->
-              <div>
-                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">
-                  Phone Number
-                </label>
-                <input type="tel" id="phone" name="Phone Number"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                  placeholder="+1-555-123-4567">
-              </div>
-
-              <!-- Inquiry Type -->
-              <div>
-                <label for="inquiry-type" class="block mb-2 text-sm font-medium text-gray-900">
-                  Inquiry Type <span class="text-red-500">*</span>
-                </label>
-                <select id="inquiry-type" name="Inquiry Type" required
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3">
-                  <option value="" selected disabled>Please select</option>
-                  <option value="Service Inquiry">Service Inquiry</option>
-                  <option value="AI/DX Consultation">AI/DX Consultation</option>
-                  <option value="Partnership/Collaboration">Partnership/Collaboration</option>
-                  <option value="Career/Recruitment">Career/Recruitment</option>
-                  <option value="Media/Press Inquiry">Media/Press Inquiry</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-
-              <!-- Message -->
-              <div>
-                <label for="message" class="block mb-2 text-sm font-medium text-gray-900">
-                  Message <span class="text-red-500">*</span>
-                </label>
-                <textarea id="message" name="Message" rows="6" required
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-                  placeholder="Please describe your inquiry"></textarea>
-              </div>
-
-              <!-- Privacy Policy Agreement -->
-              <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
-                <div class="flex items-start">
-                  <div class="flex items-center h-5">
-                    <input id="privacy" type="checkbox" required
-                      class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300">
-                  </div>
-                  <label for="privacy" class="ml-3 text-sm text-gray-700">
-                    I agree to the <a href="/en/pages/privacy/" class="text-blue-600 hover:underline font-medium">Privacy Policy</a> before submitting.
-                    <span class="text-red-500">*</span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Submit Button -->
-              <button type="submit"
-                class="w-full text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-base px-6 py-4 transition-all duration-200 flex items-center justify-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
-                </svg>
-                Submit
-              </button>
-
-              <p class="text-xs text-gray-500 text-center">
-                We typically respond within 2-3 business days.
-              </p>
-            </form>
+        <div class="field"><label for="company">Company <span class="opt">Optional</span></label><input type="text" id="company" name="Company" autocomplete="organization" placeholder="Example Inc."></div>
+        <div class="two">
+          <div class="field"><label for="email">Email <span class="req">Required</span></label><input type="email" id="email" name="email" required autocomplete="email" placeholder="name@company.com"></div>
+          <div class="field"><label for="phone">Phone <span class="opt">Optional</span></label><input type="tel" id="phone" name="Phone Number" autocomplete="tel" placeholder="+81 3-1234-5678"></div>
+        </div>
+        <div class="field">
+          <div class="lbl">Inquiry type <span class="req">Required</span></div>
+          <div class="radios">
+            <label><input type="radio" name="Inquiry Type" value="Service Inquiry" required> Service Inquiry</label>
+            <label><input type="radio" name="Inquiry Type" value="AI/DX Consultation"> AI/DX Consultation</label>
+            <label><input type="radio" name="Inquiry Type" value="doggies Demo/Adoption" id="t-doggies"> doggies demo or adoption</label>
+            <label><input type="radio" name="Inquiry Type" value="Partnership/Collaboration"> Partnership/Collaboration</label>
+            <label><input type="radio" name="Inquiry Type" value="Career/Recruitment"> Career/Recruitment</label>
+            <label><input type="radio" name="Inquiry Type" value="Media/Press Inquiry"> Media/Press Inquiry</label>
+            <label><input type="radio" name="Inquiry Type" value="Other"> Other</label>
           </div>
-        </main>
-
-        <!-- Sidebar - Company Info -->
-        <aside class="lg:w-80 flex-shrink-0">
-          <div class="lg:sticky lg:top-24 space-y-6">
-
-            <!-- Company Info Card -->
-            <div class="p-6 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl text-white">
-              <div class="flex items-center gap-3 mb-5">
-                <div class="flex-shrink-0 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                  </svg>
-                </div>
-                <h3 class="text-lg font-bold">Company Information</h3>
-              </div>
-
-              <div class="space-y-4">
-                <div class="flex items-start gap-3 p-3 bg-white/10 backdrop-blur-sm rounded-xl">
-                  <svg class="w-5 h-5 mt-0.5 text-blue-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                  </svg>
-                  <div>
-                    <p class="text-xs text-blue-200 mb-1">Company Name</p>
-                    <p class="font-medium">Stellar AIz Inc.</p>
-                  </div>
-                </div>
-
-                <div class="flex items-start gap-3 p-3 bg-white/10 backdrop-blur-sm rounded-xl">
-                  <svg class="w-5 h-5 mt-0.5 text-blue-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  </svg>
-                  <div>
-                    <p class="text-xs text-blue-200 mb-1">Location</p>
-                    <p class="font-medium text-sm leading-relaxed">SENQ Meguro, 8F Meguro Center Bldg.<br>3-2-1 Kamiosaki, Shinagawa-ku, Tokyo</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ Card -->
-            <div class="p-6 bg-gray-50 border border-gray-200 rounded-2xl">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
-                  <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                  </svg>
-                </div>
-                <h3 class="text-lg font-bold text-gray-900">Frequently Asked Questions</h3>
-              </div>
-
-              <div class="space-y-3">
-                <div class="p-3 bg-white rounded-lg border border-gray-100">
-                  <p class="text-sm font-medium text-gray-900 mb-1">How long until I receive a response?</p>
-                  <p class="text-xs text-gray-500">We typically respond within 2-3 business days.</p>
-                </div>
-                <div class="p-3 bg-white rounded-lg border border-gray-100">
-                  <p class="text-sm font-medium text-gray-900 mb-1">Is the initial consultation free?</p>
-                  <p class="text-xs text-gray-500">Yes, the initial consultation is free. Please feel free to contact us.</p>
-                </div>
-                <div class="p-3 bg-white rounded-lg border border-gray-100">
-                  <p class="text-sm font-medium text-gray-900 mb-1">What areas do you serve?</p>
-                  <p class="text-xs text-gray-500">We serve clients worldwide. Online meetings are also available.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Privacy Note -->
-            <div class="p-4 bg-blue-50 rounded-xl border border-blue-100">
-              <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                </svg>
-                <div>
-                  <p class="text-sm font-medium text-blue-900 mb-1">Handling of Personal Information</p>
-                  <p class="text-xs text-blue-700">
-                    Your information will be managed appropriately in accordance with our <a href="/en/pages/privacy/" class="underline hover:no-underline">Privacy Policy</a>.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </aside>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Component -->
-  <div id="footer-placeholder">
-<!-- COMPONENT:footer-placeholder:START -->
-<!-- Footer - English -->
-<footer class="site-footer bg-gray-900 text-white py-16 md:py-20">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8">
-    <div class="footer-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
-      <!-- Company Info -->
-      <div>
-        <div class="mb-4">
-          <img src="/assets/images/logo/stellar-aiz-logo-white-2.svg" alt="Stellar AIz" class="h-10">
         </div>
-        <p class="text-gray-300 mb-2">Mastering AI Execution with Strategy and Hyper Speed</p>
-        <p class="text-gray-400 text-sm">Stellar AIz</p>
-      </div>
-
-      <!-- Sitemap -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">Sitemap</h3>
-        <nav aria-label="Footer navigation">
-          <ul class="space-y-2">
-            <li><a href="/en/" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
-            <li><a href="/en/pages/services/" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
-            <li><a href="/en/pages/record/" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
-            <li><a href="/en/pages/about/" class="text-gray-300 hover:text-white transition-colors">About</a></li>
-            <li><a href="/en/pages/news/" class="text-gray-300 hover:text-white transition-colors">News</a></li>
-            <li><a href="/en/pages/inquiry/" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- Products -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">Products</h3>
-        <ul class="space-y-2">
-          <li>
-            <a href="/en/pages/products/ebisu/" class="text-gray-300 hover:text-white transition-colors flex items-center">
-              <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-              </svg>
-              Stellar Economics
-            </a>
-          </li>
-          <li>
-            <a href="/en/pages/products/tenjin/" class="text-gray-300 hover:text-white transition-colors flex items-center">
-              <svg class="w-4 h-4 mr-2 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-              </svg>
-              Stellar Coach
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">Contact Us</h3>
-        <p class="text-gray-300 mb-4">Get in touch for AI consulting</p>
-        <a href="/en/pages/inquiry/" class="inline-flex items-center text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition-colors">
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          Contact Us
-        </a>
+        <div class="field"><label for="message">Message <span class="req">Required</span></label><textarea id="message" name="Message" required placeholder="Tell us about your inquiry"></textarea></div>
+        <label class="consent"><input type="checkbox" id="f-agree" required> <span>I agree to the <a href="../privacy/">Privacy Policy</a></span></label>
+        <button type="submit" class="btn btn-blue" id="f-submit" disabled>Send <span class="arw">→</span></button>
+        <p class="form-note">We usually reply within two to three business days.</p>
+      </form>
+      <div class="done">
+        <h2 class="h2">This is a preview</h2>
+        <p>Nothing was sent from this shared link.<br>On the live site, you will be taken to a thank-you page after sending.</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom pt-8 border-t border-gray-700">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-gray-400 text-sm">&copy; 2025 Stellar AIz. All rights reserved.</p>
-        <div class="flex gap-6">
-          <a href="/en/pages/privacy/" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-        </div>
-      </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div><img src="../../../assets/img/logo-white.svg" alt="Stellar AIz" width="128" height="24"><p>An AI-native firm that delivers AI strategy<br>and AI product development as one team</p></div>
+      <div><h5>SERVICES</h5><ul><li><a href="../services/#consulting">AI Strategy Consulting</a></li><li><a href="../services/#engineering">AI Agent Development</a></li><li><a href="../doggies/">AI Harness doggies</a></li></ul></div>
+      <div><h5>ABOUT</h5><ul><li><a href="../record/">Our Work</a></li><li><a href="../members/">People</a></li><li><a href="../news/">News</a></li></ul></div>
+      <div><h5>COMPANY</h5><ul><li><a href="../about/">Company</a></li><li><a href="./">Contact</a></li><li><a href="../privacy/">Privacy Policy</a></li></ul></div>
     </div>
+    <div class="copy">© 2026 Stellar AIz Inc.</div>
   </div>
 </footer>
-<!-- COMPONENT:footer-placeholder:END -->
-</div>
 
-  <!-- Flowbite JS -->
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="../../../assets/js/site.js" defer></script>
 </body>
 </html>

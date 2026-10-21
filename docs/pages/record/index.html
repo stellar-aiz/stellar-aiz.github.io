@@ -1,581 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>実績 - Stellar AIz</title>
-  <meta name="description" content="Stellar AIzのAI導入支援実績。製造業、金融機関、小売業、テック企業、海外スタートアップなど多様な業界での成功事例をご紹介します。">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>実績 | Stellar AIz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="金融、製造、通信、エネルギーなど6業界で、日本の大企業を中心にAI変革を本番まで支援してきた代表的なプロジェクト。">
+<meta name="theme-color" content="#051C2C">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://stellar-aiz.com/pages/record/">
+<link rel="canonical" href="https://stellar-aiz.com/pages/record/">
+<link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/record/">
+<link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/record/">
+<link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/record/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stellar AIz">
+<meta property="og:url" content="https://stellar-aiz.com/pages/record/">
+<meta property="og:image" content="https://stellar-aiz.com/assets/img/og.jpg">
+<meta property="og:description" content="金融、製造、通信、エネルギーなど6業界で、日本の大企業を中心にAI変革を本番まで支援してきた代表的なプロジェクト。">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/icons/favicon.ico" sizes="32x32">
+<link rel="icon" href="../../assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<link rel="preload" as="image" href="../../assets/img/hero-1600.webp" type="image/webp" media="(min-width:801px)"><link rel="preload" as="image" href="../../assets/img/hero-960.webp" type="image/webp" media="(max-width:800px)">
+<link rel="stylesheet" href="../../assets/css/site.css">
 
-  <!-- hreflang -->
-  <link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/record/">
-  <link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/record/">
-  <link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/record/">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Custom Tailwind Config -->
-  <script src="/assets/js/tailwind-config.js"></script>
-
-  <!-- Flowbite CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-
-  <!-- Common CSS -->
-  <link rel="stylesheet" href="/assets/css/common.css">
-
-  <!-- i18n -->
-  <script src="/assets/js/i18n.js"></script>
-
-  <!-- Component Loader -->
-  <script src="/assets/js/components.js" defer></script>
-
-  <!-- Scroll Animations -->
-  <script src="/assets/js/scroll-animations.js" defer></script>
 </head>
-<body class="bg-white text-gray-800">
-  <!-- Header Component -->
-  <div id="header-placeholder">
-<!-- COMPONENT:header-placeholder:START -->
-<!-- Header Navigation (Flowbite Navbar) -->
-<nav class="bg-white/95 backdrop-blur-md fixed w-full z-50 top-0 start-0 border-b border-gray-200 shadow-sm">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <!-- Logo -->
-    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="/assets/images/logo/stellar-aiz-logo-dark-2.svg" class="h-6" alt="Stellar AIz" />
-    </a>
-
-    <!-- CTA Button, Language Toggle & Mobile Toggle -->
-    <div class="flex md:order-2 md:ml-auto items-center space-x-3 md:space-x-4 rtl:space-x-reverse">
-      <!-- Language Toggle -->
-      <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-        <button onclick="i18n.switchLanguage('ja')" class="px-2 py-1 text-xs font-medium bg-blue-600 text-white" aria-label="日本語に切り替え">
-          JP
-        </button>
-        <button onclick="i18n.switchLanguage('en')" class="px-2 py-1 text-xs font-medium bg-white text-gray-700 hover:bg-gray-100 transition-colors" aria-label="Switch to English">
-          EN
-        </button>
-      </div>
-      <a href="/pages/inquiry/" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors">
-        お問い合わせ
-      </a>
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">メニューを開く</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:ml-8" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
-        <li>
-          <a href="/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="home">ホーム</a>
-        </li>
-        <li>
-          <a href="/#services" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="services">サービス</a>
-        </li>
-        <li>
-          <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown" class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors">
-            プロダクト
-            <svg class="w-2.5 h-2.5 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <a href="/pages/record/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="record">実績</a>
-        </li>
-        <li>
-          <a href="/#company" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="about">会社情報</a>
-        </li>
-        <li>
-          <a href="/pages/news/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="news">ニュース</a>
-        </li>
-      </ul>
-    </div>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="../../" class="logo" aria-label="Stellar AIz トップ"><img src="../../assets/img/logo-white.svg" alt="Stellar AIz" width="128" height="24"></a>
+    <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="../services/">サービス</a><a href="../doggies/">doggies</a><a href="./" class="cur" aria-current="page">実績</a><a href="../members/">メンバー</a><a href="../news/">お知らせ</a><a href="../about/">会社情報</a>
+      <span class="lang" aria-label="Language"><b aria-current="true">JP</b><i>/</i><a href="../../en/pages/record/" lang="en" hreflang="en">EN</a></span>
+      <a href="../inquiry/" class="btn btn-blue">お問い合わせ</a>
+    </nav>
   </div>
-  <!-- Mega Menu Dropdown -->
-  <div id="mega-menu-dropdown" class="hidden border-t border-gray-200 shadow-lg bg-white border-b">
-    <div class="max-w-screen-xl px-4 py-5 mx-auto md:px-6">
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- SaaSプロダクト -->
-        <div>
-          <h3 class="mb-4 text-sm font-semibold text-gray-500 uppercase tracking-wider">SaaSプロダクト</h3>
-          <ul class="space-y-3">
-            <li>
-              <a href="/pages/products/ebisu/" class="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors group">
-                <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-blue-100 group-hover:bg-blue-200 transition-colors">
-                  <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <div class="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">ステラ・エコノミクス</div>
-                  <p class="mt-1 text-sm text-gray-500">プロジェクト収益を一元管理。AIエージェントが収益性を分析</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/pages/products/tenjin/" class="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors group">
-                <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-emerald-100 group-hover:bg-emerald-200 transition-colors">
-                  <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <div class="text-base font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">ステラ・コーチ</div>
-                  <p class="mt-1 text-sm text-gray-500">AIケース面接トレーニング。戦略コンサル出身者監修のAI面接官</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+</header>
+<main id="main">
+
+<div class="phero">
+  <div class="wrap">
+    <div class="crumb"><a href="../../">ホーム</a> ／ 実績</div>
+    <div class="eyebrow">Track Record</div>
+    <h1 class="h1">大企業のAI変革を、本番へ。</h1>
+    <p class="lead">金融、製造、通信、エネルギーなど6業界で、日本の大企業を中心に約20社のAI変革をご支援してきました。守秘義務の範囲で、代表的なプロジェクトの一部をご紹介します。</p>
   </div>
-</nav>
-<!-- COMPONENT:header-placeholder:END -->
 </div>
 
-  <!-- Hero Section with Stats -->
-  <section class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-24 pb-20">
-    <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-      <!-- Header -->
-      <div class="max-w-screen-md mx-auto text-center mb-12">
-        <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-green-300 bg-green-900/50 rounded-full border border-green-700">
-          Case Studies
-        </span>
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-white md:text-5xl">
-          メンバーの実績
-        </h1>
-        <p class="text-lg text-gray-400">
-          多様な業界でAI導入を成功に導いています
-        </p>
-      </div>
-
-      <!-- Stats Grid -->
-      <div class="grid gap-6 sm:grid-cols-3 max-w-3xl mx-auto">
-        <!-- Stat 1: Projects -->
-        <div class="text-center p-6 bg-white/5 backdrop-blur rounded-xl border border-white/10">
-          <div class="text-4xl md:text-5xl font-extrabold text-white mb-2">15<span class="text-blue-400">+</span></div>
-          <div class="text-gray-400 text-sm font-medium">プロジェクト実績</div>
-        </div>
-        <!-- Stat 2: Industries -->
-        <div class="text-center p-6 bg-white/5 backdrop-blur rounded-xl border border-white/10">
-          <div class="text-4xl md:text-5xl font-extrabold text-white mb-2">5</div>
-          <div class="text-gray-400 text-sm font-medium">対応業界</div>
-        </div>
-        <!-- Stat 3: Global Projects -->
-        <div class="text-center p-6 bg-white/5 backdrop-blur rounded-xl border border-white/10">
-          <div class="text-4xl md:text-5xl font-extrabold text-white mb-2">5<span class="text-cyan-400">+</span></div>
-          <div class="text-gray-400 text-sm font-medium">グローバルプロジェクト実績</div>
-        </div>
-      </div>
+<section class="sec">
+  <div class="wrap">
+    <div class="inds" data-filter-for=".case" role="group" aria-label="業界で絞り込み">
+      <button class="on" data-f="all">すべて</button>
+      <button data-f="fin">金融・保険・PE</button>
+      <button data-f="mfg">製造・自動車</button>
+      <button data-f="it">IT・通信・SIer</button>
+      <button data-f="retail">小売・流通・消費財</button>
+      <button data-f="energy">エネルギー・インフラ</button>
     </div>
-  </section>
+    <div class="cases">
+      <article class="case" data-tags="it"><div class="ind-tag">IT・通信・SIer ／ 大手システムインテグレーター</div><h3 class="h3">設計書レビューAIの開発・提供</h3><p>レビュー観点ごとに専門性を持たせた数十体のAIエージェントを実装し、本番業務で使えるレビューAIを構築しました。</p><div class="impact">本番業務での運用まで支援</div></article>
+      <article class="case" data-tags="fin"><div class="ind-tag">金融・保険・PE ／ 大手金融機関</div><h3 class="h3">システム開発への生成AI適用</h3><p>1万件を超える設計書をAIが参照できる形に整え、設計内容に回答するAI基盤と、テスト観点・ケースの自動生成をPoCから現場導入まで支援しました。</p><div class="impact">大規模な設計資産をAI基盤化</div></article>
+      <article class="case" data-tags="mfg"><div class="ind-tag">製造・自動車 ／ 大手自動車関連メーカー</div><h3 class="h3">車載ソフトウェア開発の生成AI変革</h3><p>車載ソフトウェアの開発プロセスに生成AIを適用し、生産性と品質の両面から変革を推進しています。</p><div class="impact">開発プロセス全体の変革</div></article>
+      <article class="case" data-tags="fin"><div class="ind-tag">金融・保険・PE ／ 金融機関</div><h3 class="h3">部署内データを横断するAIアシスタント</h3><p>メールや議事録などの部署内データを探索して回答するAIエージェント基盤を、既存の社内環境上にローコードで構築しました。</p><div class="impact">ローコードで短期構築</div></article>
+      <article class="case" data-tags="it"><div class="ind-tag">IT・通信・SIer ／ 大手IT企業</div><h3 class="h3">開発現場へのAI導入効果の測定</h3><p>開発現場の指標を調査し、AI導入の投資対効果を測る方法を定義・算出しました。</p><div class="impact">AI投資判断の定量化</div></article>
+      <article class="case" data-tags="retail"><div class="ind-tag">小売・流通・消費財 ／ 大手消費財メーカー</div><h3 class="h3">事業部門のAI活用促進</h3><p>事業部門向けにAIの仕組みをブートキャンプ形式でレクチャーし、汎用AIを用いた業務変革のアイデア出しを支援しました。</p><div class="impact">現場発のAI活用アイデアを創出</div></article>
+      <article class="case" data-tags="energy"><div class="ind-tag">エネルギー・インフラ ／ 大手インフラ企業</div><h3 class="h3">AIハーネス導入による業務変革の構想策定</h3><p>現行業務とシステムの整理、課題抽出、類似事例・技術動向の調査までを設計し、AIハーネス上のスキルとして実装しました。</p><div class="impact">構想策定からスキル実装まで一気通貫</div></article>
+    </div>  </div>
+</section>
 
-  <!-- Service Type Badges -->
-  <section class="py-8 bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-    <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-      <div class="flex flex-wrap justify-center gap-3">
-        <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900/50 dark:text-blue-300">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-          </svg>
-          AI戦略策定
-        </span>
-        <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-purple-700 bg-purple-100 rounded-full dark:bg-purple-900/50 dark:text-purple-300">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-          </svg>
-          DX推進
-        </span>
-        <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-green-700 bg-green-100 rounded-full dark:bg-green-900/50 dark:text-green-300">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-          </svg>
-          プロダクト開発
-        </span>
-        <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-amber-700 bg-amber-100 rounded-full dark:bg-amber-900/50 dark:text-amber-300">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
-          </svg>
-          データ基盤構築
-        </span>
-      </div>
+<nav class="next">
+  <a href="../doggies/"><small>← BACK</small><b>AIハーネス doggies</b></a>
+  <a href="../members/"><small>NEXT →</small><b>メンバー</b></a>
+</nav>
+
+</main>
+<div class="cta">
+  <div class="wrap">
+    <div>
+      <h2 class="h2">AIを、PoCで終わらせない。</h2>
+      <p>AI戦略、AIエージェント開発、doggiesの導入について、お気軽にご相談ください。</p>
     </div>
-  </section>
-
-  <!-- Main Content -->
-  <section class="py-16 md:py-24 bg-white dark:bg-gray-900">
-    <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-
-      <!-- 製造業 Section -->
-      <div class="mb-20">
-        <div class="flex items-center gap-4 mb-8 pb-4 border-b border-gray-200 dark:border-gray-700">
-          <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg shadow-blue-500/25">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-            </svg>
-          </div>
-          <div>
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">製造業</h2>
-            <p class="text-sm text-gray-500 dark:text-gray-400">Manufacturing · 5 projects</p>
-          </div>
-        </div>
-        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Case 1 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-blue-600 scroll-fade-up">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded-md dark:bg-blue-900/50 dark:text-blue-300">戦略</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md dark:bg-gray-700 dark:text-gray-300">6週間</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-              全バリューチェーンのAI/生成AI導入効果試算・導入ロードマップ策定
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">大手電機メーカー</p>
-          </div>
-          <!-- Case 2 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-blue-600 scroll-fade-up" style="transition-delay: 50ms;">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-md dark:bg-green-900/50 dark:text-green-300">開発</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md dark:bg-gray-700 dark:text-gray-300">2週間</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-              コールセンターへの生成AI適用余地を検証するプロダクト開発
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">大手電機メーカー</p>
-          </div>
-          <!-- Case 3 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-blue-600 scroll-fade-up" style="transition-delay: 100ms;">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-md dark:bg-green-900/50 dark:text-green-300">開発</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md dark:bg-gray-700 dark:text-gray-300">2週間</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-              アフターサービスオペレーションの故障対応迅速化プロダクト開発
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">大手電機メーカー</p>
-          </div>
-          <!-- Case 4 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-blue-600 scroll-fade-up" style="transition-delay: 150ms;">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded-md dark:bg-blue-900/50 dark:text-blue-300">戦略</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md dark:bg-gray-700 dark:text-gray-300">6週間</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-              製造検査・設備保全領域におけるAI/生成AI導入戦略策定
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">大手自動車メーカー</p>
-          </div>
-          <!-- Case 5 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-blue-600 scroll-fade-up" style="transition-delay: 200ms;">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-amber-700 bg-amber-100 rounded-md dark:bg-amber-900/50 dark:text-amber-300">基盤</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md dark:bg-gray-700 dark:text-gray-300">6週間</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-              製造領域におけるAI用データ基盤の戦略・アーキテクチャ策定
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">大手自動車メーカー</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 金融機関 Section -->
-      <div class="mb-20">
-        <div class="flex items-center gap-4 mb-8 pb-4 border-b border-gray-200 dark:border-gray-700">
-          <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl shadow-lg shadow-purple-500/25">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-          </div>
-          <div>
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">金融機関</h2>
-            <p class="text-sm text-gray-500 dark:text-gray-400">Financial Services · 3 projects</p>
-          </div>
-        </div>
-        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Case 1 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-purple-600 scroll-fade-up">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded-md dark:bg-blue-900/50 dark:text-blue-300">戦略</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md dark:bg-gray-700 dark:text-gray-300">8週間</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-              全バリューチェーンのAI変革ロードマップ・アーキテクチャ策定
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">大手銀行</p>
-          </div>
-          <!-- Case 2 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-purple-600 scroll-fade-up" style="transition-delay: 50ms;">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-purple-700 bg-purple-100 rounded-md dark:bg-purple-900/50 dark:text-purple-300">DX</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md dark:bg-gray-700 dark:text-gray-300">8週間</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-              全バリューチェーンのDXロードマップ策定
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">大手銀行</p>
-          </div>
-          <!-- Case 3 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-purple-600 scroll-fade-up" style="transition-delay: 100ms;">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-purple-700 bg-purple-100 rounded-md dark:bg-purple-900/50 dark:text-purple-300">DX</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md dark:bg-gray-700 dark:text-gray-300">8週間</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-              クレーム業務変革プランの策定支援
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">大手保険会社</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 小売業 Section -->
-      <div class="mb-20">
-        <div class="flex items-center gap-4 mb-8 pb-4 border-b border-gray-200 dark:border-gray-700">
-          <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl shadow-lg shadow-amber-500/25">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
-            </svg>
-          </div>
-          <div>
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">小売業</h2>
-            <p class="text-sm text-gray-500 dark:text-gray-400">Retail · 1 project</p>
-          </div>
-        </div>
-        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Case 1 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-amber-300 hover:shadow-lg hover:shadow-amber-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-amber-600 scroll-fade-up">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded-md dark:bg-blue-900/50 dark:text-blue-300">戦略</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-gray-600 bg-gray-100 rounded-md dark:bg-gray-700 dark:text-gray-300">8週間</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
-              10年後の未来を見据えたデジタルエコシステム構築戦略策定
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">大手百貨店</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- テック Section -->
-      <div class="mb-20">
-        <div class="flex items-center gap-4 mb-8 pb-4 border-b border-gray-200 dark:border-gray-700">
-          <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl shadow-lg shadow-green-500/25">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-          </div>
-          <div>
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">テック</h2>
-            <p class="text-sm text-gray-500 dark:text-gray-400">Technology · 2 projects</p>
-          </div>
-        </div>
-        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Case 1 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-green-300 hover:shadow-lg hover:shadow-green-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-green-600 scroll-fade-up">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded-md dark:bg-blue-900/50 dark:text-blue-300">戦略</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
-              生成AI事業の営業戦略策定
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">日本の大手テック企業</p>
-          </div>
-          <!-- Case 2 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-green-300 hover:shadow-lg hover:shadow-green-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-green-600 scroll-fade-up" style="transition-delay: 50ms;">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded-md dark:bg-blue-900/50 dark:text-blue-300">戦略</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
-              AIクラウド事業の戦略策定
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">日本の大手テック企業</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 海外 Section -->
-      <div class="mb-12">
-        <div class="flex items-center gap-4 mb-8 pb-4 border-b border-gray-200 dark:border-gray-700">
-          <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl shadow-lg shadow-cyan-500/25">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-          </div>
-          <div>
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">海外</h2>
-            <p class="text-sm text-gray-500 dark:text-gray-400">Global · 4 projects</p>
-          </div>
-        </div>
-        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          <!-- Case 1 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-cyan-300 hover:shadow-lg hover:shadow-cyan-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-cyan-600 scroll-fade-up">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-md dark:bg-green-900/50 dark:text-green-300">開発</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-cyan-700 bg-cyan-100 rounded-md dark:bg-cyan-900/50 dark:text-cyan-300">ドイツ</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
-              人材マッチングスタートアップの資金調達プロトタイプ開発
-            </h3>
-          </div>
-          <!-- Case 2 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-cyan-300 hover:shadow-lg hover:shadow-cyan-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-cyan-600 scroll-fade-up" style="transition-delay: 50ms;">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-md dark:bg-green-900/50 dark:text-green-300">開発</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-cyan-700 bg-cyan-100 rounded-md dark:bg-cyan-900/50 dark:text-cyan-300">スイス</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
-              遠隔医療スタートアップの資金調達プロトタイプ開発
-            </h3>
-          </div>
-          <!-- Case 3 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-cyan-300 hover:shadow-lg hover:shadow-cyan-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-cyan-600 scroll-fade-up" style="transition-delay: 100ms;">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-md dark:bg-green-900/50 dark:text-green-300">開発</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-cyan-700 bg-cyan-100 rounded-md dark:bg-cyan-900/50 dark:text-cyan-300">エジプト</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
-              大手銀行のtoCモバイルアプリの開発
-            </h3>
-          </div>
-          <!-- Case 4 -->
-          <div class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-cyan-300 hover:shadow-lg hover:shadow-cyan-500/10 transition-all dark:bg-gray-800 dark:border-gray-700 dark:hover:border-cyan-600 scroll-fade-up" style="transition-delay: 150ms;">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="px-2.5 py-1 text-xs font-medium text-amber-700 bg-amber-100 rounded-md dark:bg-amber-900/50 dark:text-amber-300">基盤</span>
-              <span class="px-2.5 py-1 text-xs font-medium text-cyan-700 bg-cyan-100 rounded-md dark:bg-cyan-900/50 dark:text-cyan-300">チリ</span>
-            </div>
-            <h3 class="text-gray-900 dark:text-white font-semibold mb-2 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
-              最大手保険企業のビッグデータ分析パイプライン開発
-            </h3>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA Section -->
-      <div class="mt-20 p-8 md:p-12 bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 rounded-2xl text-center relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-          <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <defs>
-              <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="100" height="100" fill="url(#grid)"/>
-          </svg>
-        </div>
-        <div class="relative z-10">
-          <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
-            AI導入をお考えですか？
-          </h3>
-          <p class="text-blue-100 mb-8 max-w-2xl mx-auto">
-            貴社の課題や目標に合わせて、最適なAI導入戦略をご提案いたします。<br class="hidden md:inline">
-            まずはお気軽にご相談ください。
-          </p>
-          <a href="/pages/inquiry/" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-blue-700 bg-white rounded-xl hover:bg-gray-100 focus:ring-4 focus:ring-blue-300 transition-all shadow-lg hover:shadow-xl">
-            お問い合わせ
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-
+    <a href="../inquiry/" class="btn">お問い合わせ <span class="arw">→</span></a>
+  </div>
+</div>
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div><img src="../../assets/img/logo-white.svg" alt="Stellar AIz" width="128" height="24"><p>AI戦略立案とAIプロダクト開発を一体で提供する<br>AIネイティブ企業</p></div>
+      <div><h5>SERVICES</h5><ul><li><a href="../services/#consulting">AI戦略コンサルティング</a></li><li><a href="../services/#engineering">AIエージェント開発</a></li><li><a href="../doggies/">AIハーネス doggies</a></li></ul></div>
+      <div><h5>ABOUT</h5><ul><li><a href="./">実績</a></li><li><a href="../members/">メンバー</a></li><li><a href="../news/">お知らせ</a></li></ul></div>
+      <div><h5>COMPANY</h5><ul><li><a href="../about/">会社情報</a></li><li><a href="../inquiry/">お問い合わせ</a></li><li><a href="../privacy/">プライバシーポリシー</a></li></ul></div>
     </div>
-  </section>
-
-  <!-- Footer Component -->
-  <div id="footer-placeholder">
-<!-- COMPONENT:footer-placeholder:START -->
-<!-- Footer -->
-<footer class="site-footer bg-gray-900 text-white py-16 md:py-20">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8">
-    <div class="footer-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
-      <!-- Company Info -->
-      <div>
-        <div class="mb-4">
-          <img src="/assets/images/logo/stellar-aiz-logo-white-2.svg" alt="Stellar AIz" class="h-10">
-        </div>
-        <p class="text-gray-300 mb-2">戦略と爆速開発で、AIの実践力を極める</p>
-        <p class="text-gray-400 text-sm">Stellar AIz</p>
-      </div>
-
-      <!-- Sitemap -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">サイトマップ</h3>
-        <nav aria-label="フッターナビゲーション">
-          <ul class="space-y-2">
-            <li><a href="/" class="text-gray-300 hover:text-white transition-colors">ホーム</a></li>
-            <li><a href="/pages/services/" class="text-gray-300 hover:text-white transition-colors">サービス</a></li>
-            <li><a href="/pages/record/" class="text-gray-300 hover:text-white transition-colors">実績</a></li>
-            <li><a href="/#company" class="text-gray-300 hover:text-white transition-colors">会社情報</a></li>
-            <li><a href="/pages/news/" class="text-gray-300 hover:text-white transition-colors">ニュース</a></li>
-            <li><a href="/pages/inquiry/" class="text-gray-300 hover:text-white transition-colors">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- Products -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">プロダクト</h3>
-        <ul class="space-y-2">
-          <li>
-            <a href="/pages/products/ebisu/" class="text-gray-300 hover:text-white transition-colors flex items-center">
-              <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-              </svg>
-              ステラ・エコノミクス
-            </a>
-          </li>
-          <li>
-            <a href="/pages/products/tenjin/" class="text-gray-300 hover:text-white transition-colors flex items-center">
-              <svg class="w-4 h-4 mr-2 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-              </svg>
-              ステラ・コーチ
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">お問い合わせ</h3>
-        <p class="text-gray-300 mb-4">AI導入のご相談はお気軽に</p>
-        <a href="/pages/inquiry/" class="inline-flex items-center text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition-colors">
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          お問い合わせはこちら
-        </a>
-      </div>
-    </div>
-
-    <!-- Footer Bottom -->
-    <div class="footer-bottom pt-8 border-t border-gray-700">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-gray-400 text-sm">&copy; 2025 Stellar AIz. All rights reserved.</p>
-        <div class="flex gap-6">
-          <a href="/pages/privacy/" class="text-gray-400 hover:text-white text-sm transition-colors">プライバシーポリシー</a>
-        </div>
-      </div>
-    </div>
+    <div class="copy">© 2026 Stellar AIz Inc.</div>
   </div>
 </footer>
-<!-- COMPONENT:footer-placeholder:END -->
-</div>
 
-  <!-- Flowbite JS -->
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="../../assets/js/site.js" defer></script>
 </body>
 </html>
