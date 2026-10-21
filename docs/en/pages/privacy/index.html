@@ -1,711 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Stellar AIz</title>
-  <meta name="description" content="Stellar AIz Inc. Privacy Policy. This policy outlines how we handle personal information.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Stellar AIz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Privacy policy of Stellar AIz Inc.">
+<meta name="theme-color" content="#051C2C">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://stellar-aiz.com/en/pages/privacy/">
+<link rel="canonical" href="https://stellar-aiz.com/en/pages/privacy/">
+<link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/privacy/">
+<link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/privacy/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stellar AIz">
+<meta property="og:url" content="https://stellar-aiz.com/en/pages/privacy/">
+<meta property="og:image" content="https://stellar-aiz.com/assets/img/og.jpg">
+<meta property="og:description" content="Privacy policy of Stellar AIz Inc.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../assets/icons/favicon.ico" sizes="32x32">
+<link rel="icon" href="../../../assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../assets/icons/apple-touch-icon.png">
+<link rel="preload" as="image" href="../../../assets/img/hero-1600.webp" type="image/webp" media="(min-width:801px)"><link rel="preload" as="image" href="../../../assets/img/hero-960.webp" type="image/webp" media="(max-width:800px)">
+<link rel="stylesheet" href="../../../assets/css/site.css">
 
-  <!-- Hreflang Tags -->
-  <link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/privacy/">
-  <link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/privacy/">
-  <link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/privacy/">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Custom Tailwind Config -->
-  <script src="/assets/js/tailwind-config.js"></script>
-
-  <!-- Flowbite CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-
-  <!-- Common CSS -->
-  <link rel="stylesheet" href="/assets/css/common.css">
-
-  <!-- i18n Script -->
-  <script src="/assets/js/i18n.js"></script>
-
-  <!-- Component Loader -->
-  <script src="/assets/js/components.js" defer></script>
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .sidebar-link.active {
-      background-color: rgb(239 246 255);
-      color: rgb(37 99 235);
-      border-left-color: rgb(37 99 235);
-    }
-    .dark .sidebar-link.active {
-      background-color: rgb(30 58 138 / 0.3);
-      color: rgb(147 197 253);
-    }
-  </style>
 </head>
-<body class="bg-white text-gray-800">
-  <!-- Header Component -->
-  <div id="header-placeholder">
-<!-- COMPONENT:header-placeholder:START -->
-<!-- Header Navigation (Flowbite Navbar) - English -->
-<nav class="bg-white/95 backdrop-blur-md fixed w-full z-50 top-0 start-0 border-b border-gray-200 shadow-sm">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <!-- Logo -->
-    <a href="/en/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="/assets/images/logo/stellar-aiz-logo-dark-2.svg" class="h-6" alt="Stellar AIz" />
-    </a>
-
-    <!-- CTA Button, Language Toggle & Mobile Toggle -->
-    <div class="flex md:order-2 md:ml-auto items-center space-x-3 md:space-x-4 rtl:space-x-reverse">
-      <!-- Language Toggle -->
-      <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-        <button onclick="i18n.switchLanguage('ja')" class="px-2 py-1 text-xs font-medium bg-white text-gray-700 hover:bg-gray-100 transition-colors" aria-label="日本語に切り替え">
-          JP
-        </button>
-        <button onclick="i18n.switchLanguage('en')" class="px-2 py-1 text-xs font-medium bg-blue-600 text-white" aria-label="Switch to English">
-          EN
-        </button>
-      </div>
-      <a href="/en/pages/inquiry/" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors">
-        Contact Us
-      </a>
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:ml-8" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
-        <li>
-          <a href="/en/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="home">Home</a>
-        </li>
-        <li>
-          <a href="/en/#services" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="services">Services</a>
-        </li>
-        <li>
-          <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown" class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors">
-            Products
-            <svg class="w-2.5 h-2.5 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <a href="/en/pages/record/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="record">Case Studies</a>
-        </li>
-        <li>
-          <a href="/en/#company" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="about">About</a>
-        </li>
-        <li>
-          <a href="/en/pages/news/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="news">News</a>
-        </li>
-      </ul>
-    </div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="../../" class="logo" aria-label="Stellar AIz home"><img src="../../../assets/img/logo-white.svg" alt="Stellar AIz" width="128" height="24"></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="../services/">Services</a><a href="../doggies/">doggies</a><a href="../record/">Our Work</a><a href="../members/">People</a><a href="../news/">News</a><a href="../about/">Company</a>
+      <span class="lang" aria-label="Language"><a href="../../../pages/privacy/" lang="ja" hreflang="ja">JP</a><i>/</i><b aria-current="true">EN</b></span>
+      <a href="../inquiry/" class="btn btn-blue">Contact</a>
+    </nav>
   </div>
-  <!-- Mega Menu Dropdown -->
-  <div id="mega-menu-dropdown" class="hidden border-t border-gray-200 shadow-lg bg-white border-b">
-    <div class="max-w-screen-xl px-4 py-5 mx-auto md:px-6">
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- SaaS Products -->
-        <div>
-          <h3 class="mb-4 text-sm font-semibold text-gray-500 uppercase tracking-wider">SaaS Products</h3>
-          <ul class="space-y-3">
-            <li>
-              <a href="/en/pages/products/ebisu/" class="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors group">
-                <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-blue-100 group-hover:bg-blue-200 transition-colors">
-                  <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <div class="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">Stellar Economics</div>
-                  <p class="mt-1 text-sm text-gray-500">Unified project revenue management with AI-powered profitability analysis</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/en/pages/products/tenjin/" class="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors group">
-                <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-emerald-100 group-hover:bg-emerald-200 transition-colors">
-                  <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <div class="text-base font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">Stellar Coach</div>
-                  <p class="mt-1 text-sm text-gray-500">AI case interview training supervised by former strategy consultants</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+</header>
+<main id="main">
+
+<div class="phero">
+  <div class="wrap">
+    <div class="crumb"><a href="../../">Home</a> ／ Privacy Policy</div>
+    <div class="eyebrow">Privacy Policy</div>
+    <h1 class="h1">Privacy Policy</h1>
+    
   </div>
-</nav>
-<!-- COMPONENT:header-placeholder:END -->
 </div>
 
-  <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 pt-28 pb-16 overflow-hidden">
-    <!-- Background Pattern -->
-    <div class="absolute inset-0 opacity-10">
-      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
-      </svg>
-    </div>
-
-    <div class="relative max-w-screen-xl px-4 mx-auto lg:px-6">
-      <div class="max-w-screen-md mx-auto text-center">
-        <div class="inline-flex items-center mb-6 px-4 py-2 text-sm font-medium text-blue-100 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-          </svg>
-          Privacy Policy
-        </div>
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-white md:text-5xl">
-          Privacy Policy
-        </h1>
-        <p class="text-lg text-blue-100 max-w-2xl mx-auto">
-          How Stellar AIz Inc. handles personal information
-        </p>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- Main Content with Sidebar -->
-  <section class="py-12 md:py-16 bg-white">
-    <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-      <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
-
-        <!-- Sidebar Navigation -->
-        <aside class="lg:w-72 flex-shrink-0">
-          <div class="lg:sticky lg:top-24">
-            <nav class="p-4 bg-gray-50 rounded-xl border border-gray-200">
-              <h3 class="px-3 mb-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                Table of Contents
-              </h3>
-              <ul class="space-y-1">
-                <li>
-                  <a href="#intro" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Introduction
-                  </a>
-                </li>
-                <li>
-                  <a href="#article1" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Article 1: Personal Information
-                  </a>
-                </li>
-                <li>
-                  <a href="#article2" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Article 2: Collection Methods
-                  </a>
-                </li>
-                <li>
-                  <a href="#article3" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Article 3: Purpose of Use
-                  </a>
-                </li>
-                <li>
-                  <a href="#article4" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Article 4: Change of Purpose
-                  </a>
-                </li>
-                <li>
-                  <a href="#article5" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Article 5: Third-Party Disclosure
-                  </a>
-                </li>
-                <li>
-                  <a href="#article6" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Article 6: Disclosure
-                  </a>
-                </li>
-                <li>
-                  <a href="#article7" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Article 7: Correction and Deletion
-                  </a>
-                </li>
-                <li>
-                  <a href="#article8" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Article 8: Suspension of Use
-                  </a>
-                </li>
-                <li>
-                  <a href="#article9" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Article 9: Policy Changes
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" class="sidebar-link flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-lg border-l-2 border-transparent hover:bg-gray-100 hover:text-blue-600 transition-colors">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="flex-1 min-w-0">
-          <!-- Introduction -->
-          <div id="intro" class="scroll-mt-24 mb-12">
-            <div class="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl">
-              <div class="flex items-start gap-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                  </svg>
-                </div>
-                <div>
-                  <h2 class="text-lg font-bold text-gray-900 mb-2">About This Policy</h2>
-                  <p class="text-gray-700 leading-relaxed">
+<section class="sec">
+  <div class="wrap">
+    <div class="prose"><!-- Introduction -->
+                  <h2>About This Policy</h2>
+                  <p>
                     Stellar AIz Inc. (hereinafter referred to as "the Company") establishes this Privacy Policy (hereinafter referred to as "this Policy") regarding the handling of users' personal information in the services provided on this website (hereinafter referred to as "the Service").
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <!-- Article 1 -->
-          <article id="article1" class="scroll-mt-24 mb-10 p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-4 mb-5 pb-4 border-b border-gray-100">
-              <span class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-sm">1</span>
-              <h2 class="text-xl font-bold text-gray-900">Article 1 (Personal Information)</h2>
-            </div>
-            <p class="text-gray-700 leading-relaxed">
+              <h2>Article 1 (Personal Information)</h2>
+            <p>
               "Personal Information" refers to "personal information" as defined in the Act on the Protection of Personal Information, meaning information about a living individual that can identify a specific individual by name, date of birth, address, telephone number, contact information, or other descriptions contained in such information, as well as data relating to physical appearance, fingerprints, voiceprints, and information that can identify a specific individual from that information alone, such as health insurance card insurer numbers (personal identification information).
             </p>
-          </article>
-
           <!-- Article 2 -->
-          <article id="article2" class="scroll-mt-24 mb-10 p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-4 mb-5 pb-4 border-b border-gray-100">
-              <span class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-sm">2</span>
-              <h2 class="text-xl font-bold text-gray-900">Article 2 (Methods of Collecting Personal Information)</h2>
-            </div>
-            <p class="text-gray-700 leading-relaxed">
+              <h2>Article 2 (Methods of Collecting Personal Information)</h2>
+            <p>
               The Company may request personal information such as name, date of birth, address, telephone number, email address, bank account number, credit card number, and driver's license number when users register for use. Additionally, the Company may collect transaction records and payment-related information containing users' personal information from our partners (including information providers, advertisers, ad distribution partners, etc., hereinafter referred to as "Partners") regarding transactions between users and Partners.
             </p>
-          </article>
-
           <!-- Article 3 -->
-          <article id="article3" class="scroll-mt-24 mb-10 p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-4 mb-5 pb-4 border-b border-gray-100">
-              <span class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-sm">3</span>
-              <h2 class="text-xl font-bold text-gray-900">Article 3 (Purpose of Collecting and Using Personal Information)</h2>
-            </div>
-            <p class="text-gray-700 leading-relaxed mb-5">
+              <h2>Article 3 (Purpose of Collecting and Using Personal Information)</h2>
+            <p>
               The purposes for which the Company collects and uses personal information are as follows:
             </p>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center text-xs font-bold text-blue-600 bg-blue-100 rounded-full">1</span>
-                <span class="text-gray-700">To provide and operate the Company's services</span>
+            <ul>
+              <li>
+                To provide and operate the Company's services
               </li>
-              <li class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center text-xs font-bold text-blue-600 bg-blue-100 rounded-full">2</span>
-                <span class="text-gray-700">To respond to inquiries from users (including identity verification)</span>
+              <li>
+                To respond to inquiries from users (including identity verification)
               </li>
-              <li class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center text-xs font-bold text-blue-600 bg-blue-100 rounded-full">3</span>
-                <span class="text-gray-700">To send emails about new features, updates, campaigns, and other services provided by the Company</span>
+              <li>
+                To send emails about new features, updates, campaigns, and other services provided by the Company
               </li>
-              <li class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center text-xs font-bold text-blue-600 bg-blue-100 rounded-full">4</span>
-                <span class="text-gray-700">To contact users as necessary for maintenance, important notices, and other communications</span>
+              <li>
+                To contact users as necessary for maintenance, important notices, and other communications
               </li>
-              <li class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center text-xs font-bold text-blue-600 bg-blue-100 rounded-full">5</span>
-                <span class="text-gray-700">To identify users who violate the terms of service or attempt to use the service for fraudulent or improper purposes, and to refuse their use</span>
+              <li>
+                To identify users who violate the terms of service or attempt to use the service for fraudulent or improper purposes, and to refuse their use
               </li>
-              <li class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center text-xs font-bold text-blue-600 bg-blue-100 rounded-full">6</span>
-                <span class="text-gray-700">To bill users for paid services</span>
+              <li>
+                To bill users for paid services
               </li>
-              <li class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center text-xs font-bold text-blue-600 bg-blue-100 rounded-full">7</span>
-                <span class="text-gray-700">Purposes incidental to the above purposes</span>
+              <li>
+                Purposes incidental to the above purposes
               </li>
             </ul>
-          </article>
-
           <!-- Article 4 -->
-          <article id="article4" class="scroll-mt-24 mb-10 p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-4 mb-5 pb-4 border-b border-gray-100">
-              <span class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-sm">4</span>
-              <h2 class="text-xl font-bold text-gray-900">Article 4 (Change of Purpose of Use)</h2>
-            </div>
-            <div class="space-y-4">
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">1.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  The Company shall change the purpose of use of personal information only when it is reasonably recognized that the purpose of use is related to the original purpose.
+              <h2>Article 4 (Change of Purpose of Use)</h2>
+                <p>1. The Company shall change the purpose of use of personal information only when it is reasonably recognized that the purpose of use is related to the original purpose.
                 </p>
-              </div>
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">2.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  When the purpose of use is changed, the Company shall notify users of the changed purpose or publish it on this website by the method prescribed by the Company.
+                <p>2. When the purpose of use is changed, the Company shall notify users of the changed purpose or publish it on this website by the method prescribed by the Company.
                 </p>
-              </div>
-            </div>
-          </article>
-
           <!-- Article 5 -->
-          <article id="article5" class="scroll-mt-24 mb-10 p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-4 mb-5 pb-4 border-b border-gray-100">
-              <span class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-sm">5</span>
-              <h2 class="text-xl font-bold text-gray-900">Article 5 (Disclosure of Personal Information to Third Parties)</h2>
-            </div>
-            <div class="space-y-6">
-              <div>
-                <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500 mb-4">
-                  <p class="font-semibold text-gray-900 mb-2">1.</p>
-                  <p class="text-gray-700 leading-relaxed">
-                    The Company will not provide personal information to third parties without obtaining the prior consent of the user, except in the following cases. However, this excludes cases permitted by the Act on the Protection of Personal Information and other laws and regulations.
+              <h2>Article 5 (Disclosure of Personal Information to Third Parties)</h2>
+                  <p>1. The Company will not provide personal information to third parties without obtaining the prior consent of the user, except in the following cases. However, this excludes cases permitted by the Act on the Protection of Personal Information and other laws and regulations.
                   </p>
-                </div>
-                <div class="ml-4 space-y-2">
-                  <div class="flex gap-3 p-3 bg-blue-50/50 rounded-lg">
-                    <span class="flex-shrink-0 text-blue-600 font-medium">a.</span>
-                    <span class="text-gray-700">When it is necessary for the protection of human life, body, or property and it is difficult to obtain the consent of the individual</span>
-                  </div>
-                  <div class="flex gap-3 p-3 bg-blue-50/50 rounded-lg">
-                    <span class="flex-shrink-0 text-blue-600 font-medium">b.</span>
-                    <span class="text-gray-700">When it is especially necessary for improving public health or promoting the sound development of children and it is difficult to obtain the consent of the individual</span>
-                  </div>
-                  <div class="flex gap-3 p-3 bg-blue-50/50 rounded-lg">
-                    <span class="flex-shrink-0 text-blue-600 font-medium">c.</span>
-                    <span class="text-gray-700">When it is necessary to cooperate with a national institution, local government, or a person entrusted by them in executing affairs prescribed by laws and regulations, and obtaining the consent of the individual may impede the execution of such affairs</span>
-                  </div>
-                  <div class="flex flex-col gap-3 p-3 bg-blue-50/50 rounded-lg">
-                    <div class="flex gap-3">
-                      <span class="flex-shrink-0 text-blue-600 font-medium">d.</span>
-                      <span class="text-gray-700">When the following matters are notified or announced in advance and the Company has notified the Personal Information Protection Commission</span>
-                    </div>
-                    <ul class="ml-8 space-y-1 text-sm text-gray-600">
-                      <li class="flex gap-2"><span class="text-blue-500">I.</span>The purpose of use includes provision to third parties</li>
-                      <li class="flex gap-2"><span class="text-blue-500">II.</span>Items of data to be provided to third parties</li>
-                      <li class="flex gap-2"><span class="text-blue-500">III.</span>Means or method of provision to third parties</li>
-                      <li class="flex gap-2"><span class="text-blue-500">IV.</span>Stopping the provision of personal information to third parties at the request of the individual</li>
-                      <li class="flex gap-2"><span class="text-blue-500">V.</span>Method of receiving requests from the individual</li>
+                    a.
+                    When it is necessary for the protection of human life, body, or property and it is difficult to obtain the consent of the individual
+                    b.
+                    When it is especially necessary for improving public health or promoting the sound development of children and it is difficult to obtain the consent of the individual
+                    c.
+                    When it is necessary to cooperate with a national institution, local government, or a person entrusted by them in executing affairs prescribed by laws and regulations, and obtaining the consent of the individual may impede the execution of such affairs
+                      d.
+                      When the following matters are notified or announced in advance and the Company has notified the Personal Information Protection Commission
+                    <ul>
+                      <li>I.The purpose of use includes provision to third parties</li>
+                      <li>II.Items of data to be provided to third parties</li>
+                      <li>III.Means or method of provision to third parties</li>
+                      <li>IV.Stopping the provision of personal information to third parties at the request of the individual</li>
+                      <li>V.Method of receiving requests from the individual</li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500 mb-4">
-                  <p class="font-semibold text-gray-900 mb-2">2.</p>
-                  <p class="text-gray-700 leading-relaxed">
-                    Notwithstanding the provisions of the preceding paragraph, the recipient of information shall not be considered a third party in the following cases:
+                  <p>2. Notwithstanding the provisions of the preceding paragraph, the recipient of information shall not be considered a third party in the following cases:
                   </p>
-                </div>
-                <div class="ml-4 space-y-2">
-                  <div class="flex gap-3 p-3 bg-blue-50/50 rounded-lg">
-                    <span class="flex-shrink-0 text-blue-600 font-medium">a.</span>
-                    <span class="text-gray-700">When the Company outsources all or part of the handling of personal information within the scope necessary to achieve the purpose of use</span>
-                  </div>
-                  <div class="flex gap-3 p-3 bg-blue-50/50 rounded-lg">
-                    <span class="flex-shrink-0 text-blue-600 font-medium">b.</span>
-                    <span class="text-gray-700">When personal information is provided as a result of succession of business due to merger or other reasons</span>
-                  </div>
-                  <div class="flex gap-3 p-3 bg-blue-50/50 rounded-lg">
-                    <span class="flex-shrink-0 text-blue-600 font-medium">c.</span>
-                    <span class="text-gray-700">When personal information is used jointly with a specific party, and the individual has been notified in advance or can easily learn of the items of personal information to be jointly used, the scope of parties using them jointly, the purpose of use by those using them, and the name of the person responsible for managing the personal information</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
+                    a.
+                    When the Company outsources all or part of the handling of personal information within the scope necessary to achieve the purpose of use
+                    b.
+                    When personal information is provided as a result of succession of business due to merger or other reasons
+                    c.
+                    When personal information is used jointly with a specific party, and the individual has been notified in advance or can easily learn of the items of personal information to be jointly used, the scope of parties using them jointly, the purpose of use by those using them, and the name of the person responsible for managing the personal information
           <!-- Article 6 -->
-          <article id="article6" class="scroll-mt-24 mb-10 p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-4 mb-5 pb-4 border-b border-gray-100">
-              <span class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-sm">6</span>
-              <h2 class="text-xl font-bold text-gray-900">Article 6 (Disclosure of Personal Information)</h2>
-            </div>
-            <div class="space-y-4">
-              <div>
-                <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500 mb-4">
-                  <p class="font-semibold text-gray-900 mb-2">1.</p>
-                  <p class="text-gray-700 leading-relaxed">
-                    When requested by an individual to disclose their personal information, the Company shall disclose it to the individual without delay. However, if disclosure falls under any of the following, the Company may choose not to disclose all or part of the information, and if such a decision is made, the individual will be notified without delay. A fee of 1,000 yen per case will be charged for disclosure of personal information.
+              <h2>Article 6 (Disclosure of Personal Information)</h2>
+                  <p>1. When requested by an individual to disclose their personal information, the Company shall disclose it to the individual without delay. However, if disclosure falls under any of the following, the Company may choose not to disclose all or part of the information, and if such a decision is made, the individual will be notified without delay. A fee of 1,000 yen per case will be charged for disclosure of personal information.
                   </p>
-                </div>
-                <div class="ml-4 space-y-2">
-                  <div class="flex gap-3 p-3 bg-blue-50/50 rounded-lg">
-                    <span class="flex-shrink-0 text-blue-600 font-medium">a.</span>
-                    <span class="text-gray-700">When there is a risk of harming the life, body, property, or other rights and interests of the individual or a third party</span>
-                  </div>
-                  <div class="flex gap-3 p-3 bg-blue-50/50 rounded-lg">
-                    <span class="flex-shrink-0 text-blue-600 font-medium">b.</span>
-                    <span class="text-gray-700">When there is a risk of significantly impeding the proper execution of the Company's business</span>
-                  </div>
-                  <div class="flex gap-3 p-3 bg-blue-50/50 rounded-lg">
-                    <span class="flex-shrink-0 text-blue-600 font-medium">c.</span>
-                    <span class="text-gray-700">When disclosure would violate other laws and regulations</span>
-                  </div>
-                </div>
-              </div>
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">2.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  Notwithstanding the provisions of the preceding paragraph, information other than personal information, such as history information and characteristic information, will not be disclosed as a general rule.
+                    a.
+                    When there is a risk of harming the life, body, property, or other rights and interests of the individual or a third party
+                    b.
+                    When there is a risk of significantly impeding the proper execution of the Company's business
+                    c.
+                    When disclosure would violate other laws and regulations
+                <p>2. Notwithstanding the provisions of the preceding paragraph, information other than personal information, such as history information and characteristic information, will not be disclosed as a general rule.
                 </p>
-              </div>
-            </div>
-          </article>
-
           <!-- Article 7 -->
-          <article id="article7" class="scroll-mt-24 mb-10 p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-4 mb-5 pb-4 border-b border-gray-100">
-              <span class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-sm">7</span>
-              <h2 class="text-xl font-bold text-gray-900">Article 7 (Correction and Deletion of Personal Information)</h2>
-            </div>
-            <div class="space-y-4">
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">1.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  If the user's own personal information held by the Company is incorrect, the user may request correction, addition, or deletion (hereinafter referred to as "Correction, etc.") of the personal information from the Company according to the procedures established by the Company.
+              <h2>Article 7 (Correction and Deletion of Personal Information)</h2>
+                <p>1. If the user's own personal information held by the Company is incorrect, the user may request correction, addition, or deletion (hereinafter referred to as "Correction, etc.") of the personal information from the Company according to the procedures established by the Company.
                 </p>
-              </div>
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">2.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  When the Company receives a request as described in the preceding paragraph and determines that it is necessary to comply with the request, the Company shall make such Correction, etc. of the personal information without delay.
+                <p>2. When the Company receives a request as described in the preceding paragraph and determines that it is necessary to comply with the request, the Company shall make such Correction, etc. of the personal information without delay.
                 </p>
-              </div>
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">3.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  When the Company has made Correction, etc. based on the provisions of the preceding paragraph, or when the Company has decided not to make Correction, etc., the Company shall notify the user without delay.
+                <p>3. When the Company has made Correction, etc. based on the provisions of the preceding paragraph, or when the Company has decided not to make Correction, etc., the Company shall notify the user without delay.
                 </p>
-              </div>
-            </div>
-          </article>
-
           <!-- Article 8 -->
-          <article id="article8" class="scroll-mt-24 mb-10 p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-4 mb-5 pb-4 border-b border-gray-100">
-              <span class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-sm">8</span>
-              <h2 class="text-xl font-bold text-gray-900">Article 8 (Suspension of Use of Personal Information)</h2>
-            </div>
-            <div class="space-y-4">
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">1.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  When requested by an individual to suspend or delete the use of personal information (hereinafter referred to as "Suspension of Use, etc.") on the grounds that the personal information is being handled beyond the scope of the purpose of use or that it was obtained by wrongful means, the Company shall conduct the necessary investigation without delay.
+              <h2>Article 8 (Suspension of Use of Personal Information)</h2>
+                <p>1. When requested by an individual to suspend or delete the use of personal information (hereinafter referred to as "Suspension of Use, etc.") on the grounds that the personal information is being handled beyond the scope of the purpose of use or that it was obtained by wrongful means, the Company shall conduct the necessary investigation without delay.
                 </p>
-              </div>
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">2.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  Based on the results of the investigation in the preceding paragraph, if it is determined that it is necessary to comply with the request, the Company shall implement Suspension of Use, etc. of the personal information without delay.
+                <p>2. Based on the results of the investigation in the preceding paragraph, if it is determined that it is necessary to comply with the request, the Company shall implement Suspension of Use, etc. of the personal information without delay.
                 </p>
-              </div>
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">3.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  When the Company has implemented Suspension of Use, etc. based on the provisions of the preceding paragraph, or when the Company has decided not to implement Suspension of Use, etc., the Company shall notify the user without delay.
+                <p>3. When the Company has implemented Suspension of Use, etc. based on the provisions of the preceding paragraph, or when the Company has decided not to implement Suspension of Use, etc., the Company shall notify the user without delay.
                 </p>
-              </div>
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">4.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  Notwithstanding the preceding two paragraphs, when Suspension of Use, etc. requires substantial costs or is otherwise difficult to implement, and alternative measures can be taken to protect the rights and interests of users, such alternative measures shall be implemented.
+                <p>4. Notwithstanding the preceding two paragraphs, when Suspension of Use, etc. requires substantial costs or is otherwise difficult to implement, and alternative measures can be taken to protect the rights and interests of users, such alternative measures shall be implemented.
                 </p>
-              </div>
-            </div>
-          </article>
-
           <!-- Article 9 -->
-          <article id="article9" class="scroll-mt-24 mb-10 p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-4 mb-5 pb-4 border-b border-gray-100">
-              <span class="flex items-center justify-center w-10 h-10 text-lg font-bold text-white bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-sm">9</span>
-              <h2 class="text-xl font-bold text-gray-900">Article 9 (Changes to Privacy Policy)</h2>
-            </div>
-            <div class="space-y-4">
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">1.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  The contents of this Policy may be changed without notice to users, except for matters otherwise provided by laws and regulations or this Policy.
+              <h2>Article 9 (Changes to Privacy Policy)</h2>
+                <p>1. The contents of this Policy may be changed without notice to users, except for matters otherwise provided by laws and regulations or this Policy.
                 </p>
-              </div>
-              <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500">
-                <p class="font-semibold text-gray-900 mb-2">2.</p>
-                <p class="text-gray-700 leading-relaxed">
-                  Unless otherwise specified by the Company, the revised Privacy Policy shall take effect from the time it is posted on this website.
+                <p>2. Unless otherwise specified by the Company, the revised Privacy Policy shall take effect from the time it is posted on this website.
                 </p>
-              </div>
-            </div>
-          </article>
-
           <!-- Contact Section -->
-          <div id="contact" class="scroll-mt-24 mt-12 p-8 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl text-white">
-            <div class="flex items-start gap-4">
-              <div class="flex-shrink-0 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                </svg>
-              </div>
-              <div class="flex-1">
-                <h3 class="text-xl font-bold mb-3">Contact Us</h3>
-                <p class="text-blue-100 mb-6">
+                <h3>Contact Us</h3>
+                <p>
                   For inquiries regarding this Policy, please contact us at the following address.
                 </p>
-                <div class="space-y-4">
-                  <div class="flex items-start gap-3 p-4 bg-white/10 backdrop-blur-sm rounded-xl">
-                    <svg class="w-5 h-5 mt-0.5 text-blue-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                    </svg>
-                    <span class="font-medium">Stellar AIz Inc.</span>
-                  </div>
-                  <div class="flex items-start gap-3 p-4 bg-white/10 backdrop-blur-sm rounded-xl">
-                    <svg class="w-5 h-5 mt-0.5 text-blue-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                    </svg>
-                    <span>SENQ Meguro, 8F Meguro Center Building, 3-2-1 Kamiosaki, Shinagawa-ku, Tokyo</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                    Stellar AIz Inc.
+                    SENQ Meguro, 8F Meguro Center Building, 3-2-1 Kamiosaki, Shinagawa-ku, Tokyo</div>
+  </div>
+</section>
 
-        </main>
-      </div>
+</main>
+<div class="cta">
+  <div class="wrap">
+    <div>
+      <h2 class="h2">Take AI beyond the PoC.</h2>
+      <p>Talk to us about AI strategy, AI agent development or bringing doggies into your organization.</p>
     </div>
-  </section>
-
-  <!-- Footer Component -->
-  <div id="footer-placeholder">
-<!-- COMPONENT:footer-placeholder:START -->
-<!-- Footer - English -->
-<footer class="site-footer bg-gray-900 text-white py-16 md:py-20">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8">
-    <div class="footer-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
-      <!-- Company Info -->
-      <div>
-        <div class="mb-4">
-          <img src="/assets/images/logo/stellar-aiz-logo-white-2.svg" alt="Stellar AIz" class="h-10">
-        </div>
-        <p class="text-gray-300 mb-2">Mastering AI Execution with Strategy and Hyper Speed</p>
-        <p class="text-gray-400 text-sm">Stellar AIz</p>
-      </div>
-
-      <!-- Sitemap -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">Sitemap</h3>
-        <nav aria-label="Footer navigation">
-          <ul class="space-y-2">
-            <li><a href="/en/" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
-            <li><a href="/en/pages/services/" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
-            <li><a href="/en/pages/record/" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
-            <li><a href="/en/pages/about/" class="text-gray-300 hover:text-white transition-colors">About</a></li>
-            <li><a href="/en/pages/news/" class="text-gray-300 hover:text-white transition-colors">News</a></li>
-            <li><a href="/en/pages/inquiry/" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- Products -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">Products</h3>
-        <ul class="space-y-2">
-          <li>
-            <a href="/en/pages/products/ebisu/" class="text-gray-300 hover:text-white transition-colors flex items-center">
-              <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-              </svg>
-              Stellar Economics
-            </a>
-          </li>
-          <li>
-            <a href="/en/pages/products/tenjin/" class="text-gray-300 hover:text-white transition-colors flex items-center">
-              <svg class="w-4 h-4 mr-2 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-              </svg>
-              Stellar Coach
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">Contact Us</h3>
-        <p class="text-gray-300 mb-4">Get in touch for AI consulting</p>
-        <a href="/en/pages/inquiry/" class="inline-flex items-center text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition-colors">
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          Contact Us
-        </a>
-      </div>
+    <a href="../inquiry/" class="btn">Contact <span class="arw">→</span></a>
+  </div>
+</div>
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div><img src="../../../assets/img/logo-white.svg" alt="Stellar AIz" width="128" height="24"><p>An AI-native firm that delivers AI strategy<br>and AI product development as one team</p></div>
+      <div><h5>SERVICES</h5><ul><li><a href="../services/#consulting">AI Strategy Consulting</a></li><li><a href="../services/#engineering">AI Agent Development</a></li><li><a href="../doggies/">AI Harness doggies</a></li></ul></div>
+      <div><h5>ABOUT</h5><ul><li><a href="../record/">Our Work</a></li><li><a href="../members/">People</a></li><li><a href="../news/">News</a></li></ul></div>
+      <div><h5>COMPANY</h5><ul><li><a href="../about/">Company</a></li><li><a href="../inquiry/">Contact</a></li><li><a href="./">Privacy Policy</a></li></ul></div>
     </div>
-
-    <!-- Footer Bottom -->
-    <div class="footer-bottom pt-8 border-t border-gray-700">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-gray-400 text-sm">&copy; 2025 Stellar AIz. All rights reserved.</p>
-        <div class="flex gap-6">
-          <a href="/en/pages/privacy/" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-        </div>
-      </div>
-    </div>
+    <div class="copy">© 2026 Stellar AIz Inc.</div>
   </div>
 </footer>
-<!-- COMPONENT:footer-placeholder:END -->
-</div>
 
-  <!-- Flowbite JS -->
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-
-  <!-- Sidebar Active State Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('article[id], div[id]');
-      const navLinks = document.querySelectorAll('.sidebar-link');
-
-      function updateActiveLink() {
-        let currentSection = '';
-
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (window.scrollY >= sectionTop - 150) {
-            currentSection = section.getAttribute('id');
-          }
-        });
-
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + currentSection) {
-            link.classList.add('active');
-          }
-        });
-      }
-
-      window.addEventListener('scroll', updateActiveLink);
-      updateActiveLink();
-    });
-  </script>
+<script src="../../../assets/js/site.js" defer></script>
 </body>
 </html>

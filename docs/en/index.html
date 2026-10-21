@@ -1,1047 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="format-detection" content="telephone=no">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stellar AIz | AI strategy and engineering</title>
+<meta name="description" content="Stellar AIz delivers AI strategy and AI product development as one team, taking enterprise transformation from concept to production in a short time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Stellar AIz delivers AI strategy and AI product development as one team, taking enterprise transformation from concept to production in a short time.">
+<meta name="theme-color" content="#051C2C">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://stellar-aiz.com/en/">
-
-  <!-- hreflang tags -->
-  <link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/">
-  <link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/">
-  <link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/">
-
-  <!-- SEO Meta -->
-  <title>Stellar AIz - Mastering AI Execution with Strategy and Hyper Speed</title>
-  <meta name="description" content="Stellar AIz provides comprehensive AI implementation support from strategy to rapid development. We deliver PoC in 2-3 months and maximize business impact.">
-  <meta name="keywords" content="Stellar AIz,AI implementation,AI strategy,PoC development,rapid development,DX support">
-
-  <!-- OGP -->
-  <meta property="og:site_name" content="Stellar AIz">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="Stellar AIz - Mastering AI Execution with Strategy and Hyper Speed">
-  <meta property="og:description" content="Stellar AIz provides comprehensive AI implementation support from strategy to rapid development. We deliver PoC in 2-3 months and maximize business impact.">
-  <meta property="og:url" content="https://stellar-aiz.com/en/">
-  <meta property="og:image" content="https://stellar-aiz.com/assets/images/ogp/home.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Stellar AIz",
-    "url": "https://stellar-aiz.com/",
-    "logo": "https://stellar-aiz.com/assets/images/logo/stellar-aiz-logo-dark-2.svg",
-    "description": "Comprehensive AI implementation support from strategy to rapid development",
-    "address": {
-      "@type": "PostalAddress",
-      "postalCode": "141-0021",
-      "addressRegion": "Tokyo",
-      "addressLocality": "Shinagawa-ku",
-      "streetAddress": "3-2-1 Kamiosaki, Meguro Center Building 8F, SENQ Meguro",
-      "addressCountry": "JP"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Stellar AIz",
-    "url": "https://stellar-aiz.com/"
-  }
-  </script>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Custom Tailwind Config -->
-  <script src="/assets/js/tailwind-config.js"></script>
-
-  <!-- Flowbite CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-
-  <!-- Common CSS -->
-  <link rel="stylesheet" href="/assets/css/common.css">
-
-  <!-- Scroll Animations -->
-  <script src="/assets/js/scroll-animations.js" defer></script>
-
-  <!-- i18n -->
-  <script src="/assets/js/i18n.js" defer></script>
-
-  <!-- Component Loader -->
-  <script src="/assets/js/components.js" defer></script>
+<link rel="canonical" href="https://stellar-aiz.com/en/">
+<link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/">
+<link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stellar AIz">
+<meta property="og:url" content="https://stellar-aiz.com/en/">
+<meta property="og:image" content="https://stellar-aiz.com/assets/img/og.jpg">
+<meta property="og:description" content="Stellar AIz delivers AI strategy and AI product development as one team, taking enterprise transformation from concept to production in a short time.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="32x32">
+<link rel="icon" href="../assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<link rel="preload" as="image" href="../assets/img/hero-1600.webp" type="image/webp" media="(min-width:801px)"><link rel="preload" as="image" href="../assets/img/hero-960.webp" type="image/webp" media="(max-width:800px)">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Stellar AIz Inc.", "alternateName": "Stellar AIz", "url": "https://stellar-aiz.com/", "logo": "https://stellar-aiz.com/assets/icons/icon-512.png", "address": {"@type": "PostalAddress", "postalCode": "141-0021", "addressRegion": "東京都", "addressLocality": "品川区", "streetAddress": "上大崎三丁目2-1 目黒センタービル8F", "addressCountry": "JP"}}</script>
 </head>
-<body class="bg-white text-gray-800">
-  <!-- Header Component -->
-  <div id="header-placeholder">
-<!-- COMPONENT:header-placeholder:START -->
-<!-- Header Navigation (Flowbite Navbar) - English -->
-<nav class="bg-white/95 backdrop-blur-md fixed w-full z-50 top-0 start-0 border-b border-gray-200 shadow-sm">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <!-- Logo -->
-    <a href="/en/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="/assets/images/logo/stellar-aiz-logo-dark-2.svg" class="h-6" alt="Stellar AIz" />
-    </a>
-
-    <!-- CTA Button, Language Toggle & Mobile Toggle -->
-    <div class="flex md:order-2 md:ml-auto items-center space-x-3 md:space-x-4 rtl:space-x-reverse">
-      <!-- Language Toggle -->
-      <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-        <button onclick="i18n.switchLanguage('ja')" class="px-2 py-1 text-xs font-medium bg-white text-gray-700 hover:bg-gray-100 transition-colors" aria-label="日本語に切り替え">
-          JP
-        </button>
-        <button onclick="i18n.switchLanguage('en')" class="px-2 py-1 text-xs font-medium bg-blue-600 text-white" aria-label="Switch to English">
-          EN
-        </button>
-      </div>
-      <a href="/en/pages/inquiry/" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center transition-colors">
-        Contact Us
-      </a>
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:ml-8" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
-        <li>
-          <a href="/en/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="home">Home</a>
-        </li>
-        <li>
-          <a href="/en/#services" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="services">Services</a>
-        </li>
-        <li>
-          <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown" class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors">
-            Products
-            <svg class="w-2.5 h-2.5 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <a href="/en/pages/record/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="record">Case Studies</a>
-        </li>
-        <li>
-          <a href="/en/#company" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="about">About</a>
-        </li>
-        <li>
-          <a href="/en/pages/news/" class="nav-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600 md:p-0 transition-colors" data-page="news">News</a>
-        </li>
-      </ul>
-    </div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="./" class="logo" aria-label="Stellar AIz home"><img src="../assets/img/logo-white.svg" alt="Stellar AIz" width="128" height="24"></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="pages/services/">Services</a><a href="pages/doggies/">doggies</a><a href="pages/record/">Our Work</a><a href="pages/members/">People</a><a href="pages/news/">News</a><a href="pages/about/">Company</a>
+      <span class="lang" aria-label="Language"><a href="../" lang="ja" hreflang="ja">JP</a><i>/</i><b aria-current="true">EN</b></span>
+      <a href="pages/inquiry/" class="btn btn-blue">Contact</a>
+    </nav>
   </div>
-  <!-- Mega Menu Dropdown -->
-  <div id="mega-menu-dropdown" class="hidden border-t border-gray-200 shadow-lg bg-white border-b">
-    <div class="max-w-screen-xl px-4 py-5 mx-auto md:px-6">
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- SaaS Products -->
-        <div>
-          <h3 class="mb-4 text-sm font-semibold text-gray-500 uppercase tracking-wider">SaaS Products</h3>
-          <ul class="space-y-3">
-            <li>
-              <a href="/en/pages/products/ebisu/" class="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors group">
-                <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-blue-100 group-hover:bg-blue-200 transition-colors">
-                  <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <div class="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">Stellar Economics</div>
-                  <p class="mt-1 text-sm text-gray-500">Unified project revenue management with AI-powered profitability analysis</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/en/pages/products/tenjin/" class="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors group">
-                <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-emerald-100 group-hover:bg-emerald-200 transition-colors">
-                  <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <div class="text-base font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">Stellar Coach</div>
-                  <p class="mt-1 text-sm text-gray-500">AI case interview training supervised by former strategy consultants</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
+</header>
+<main id="main">
+
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div class="eyebrow">AI-Native Strategy &amp; Engineering</div>
+    <h1 class="kinetic" aria-label="Felt in the P&amp;L. Seen in the organization. AI transformation.">
+      <span class="ln"><span class="in">Felt in the P&amp;L.</span></span>
+      <span class="ln"><span class="in">Seen in the organization.</span></span>
+      <span class="ln"><span class="in"><em>AI transformation.</em></span></span>
+    </h1>
+    <div class="hero-foot">
+      <div>
+        <p class="sub">From the boardroom question to AI running in production.</p>
+        <p class="lead">We deliver AI strategy and AI product development as one team, taking enterprise transformation from concept to production in a short time.</p>
+      </div>
+      <div class="ctas">
+        <a href="pages/inquiry/" class="btn btn-blue">Talk to us <span class="arw">→</span></a>
+        <a href="pages/services/" class="btn btn-line">Our services <span class="arw">→</span></a>
       </div>
     </div>
   </div>
-</nav>
-<!-- COMPONENT:header-placeholder:END -->
+</section>
+
+<div class="stats">
+  <div class="wrap grid">
+    <div class="stat"><div class="num">6<small>industries</small></div><div class="lbl">Including finance, manufacturing,<br>telecom and energy</div></div>
+    <div class="stat"><div class="num">~20<small>companies</small></div><div class="lbl">AI transformation support,<br>mainly for large Japanese enterprises</div></div>
+    <div class="stat"><div class="num">About half</div><div class="lbl">of our core members come from<br>top-tier global strategy firms</div></div>
+  </div>
 </div>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Hero Section (Flowbite Image Side) -->
-    <section class="bg-white dark:bg-gray-900 pt-20">
-      <!-- Mobile Marquee (Top) -->
-      <div class="lg:hidden hero-marquee-mobile mt-4">
-        <div class="hero-marquee-mobile-row">
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/stellar-coach1.png" alt="Stellar Coach"></div>
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/stellar-knowledge1.png" alt="Stellar Knowledge"></div>
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/resume-review.png" alt="Resume Review"></div>
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/stellar-coach2.png" alt="Stellar Coach"></div>
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/stellar-knowledge2.png" alt="Stellar Knowledge"></div>
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/stellar-coach3.png" alt="Stellar Coach"></div>
-          <!-- Duplicates for seamless loop -->
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/stellar-coach1.png" alt="Stellar Coach"></div>
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/stellar-knowledge1.png" alt="Stellar Knowledge"></div>
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/resume-review.png" alt="Resume Review"></div>
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/stellar-coach2.png" alt="Stellar Coach"></div>
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/stellar-knowledge2.png" alt="Stellar Knowledge"></div>
-          <div class="hero-marquee-mobile-item"><img src="/assets/images/products/stellar-coach3.png" alt="Stellar Coach"></div>
-        </div>
-      </div>
-
-      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <!-- Text Content -->
-        <div class="mr-auto place-self-center lg:col-span-7">
-          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
-            <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
-            </svg>
-            Hyper Rapid AI Development
-          </span>
-          <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-            Mastering AI Execution<br>with Strategy and Hyper Speed
-          </h1>
-          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Six months for PoC is outdated. Stellar AIz delivers results in 2-3 months. We provide end-to-end support from strategy to implementation.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#services" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 transition-colors">
-              View Services
-              <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
-              </svg>
-            </a>
-            <a href="/pages/inquiry/" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 transition-colors">
-              Discuss Your PoC
-            </a>
-          </div>
-        </div>
-        <!-- Diagonal Marquee (Desktop) -->
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex lg:items-center">
-          <div class="hero-marquee-container">
-            <div class="hero-marquee-wrapper">
-              <!-- Row 1: Scrolls left (fast) -->
-              <div class="hero-marquee-row scroll-left speed-fast">
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach1.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-knowledge1.png" alt="Stellar Knowledge" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/resume-review.png" alt="Resume Review" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach2.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-knowledge2.png" alt="Stellar Knowledge" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach3.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-                <!-- Duplicates for seamless loop -->
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach1.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-knowledge1.png" alt="Stellar Knowledge" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/resume-review.png" alt="Resume Review" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach2.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-knowledge2.png" alt="Stellar Knowledge" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach3.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-              </div>
-
-              <!-- Row 2: Scrolls right (slow) -->
-              <div class="hero-marquee-row scroll-right speed-slow">
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach3.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/resume-review.png" alt="Resume Review" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-knowledge2.png" alt="Stellar Knowledge" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach1.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-knowledge1.png" alt="Stellar Knowledge" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach2.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-                <!-- Duplicates for seamless loop -->
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach3.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/resume-review.png" alt="Resume Review" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-knowledge2.png" alt="Stellar Knowledge" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach1.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-knowledge1.png" alt="Stellar Knowledge" class="hero-marquee-image"></div>
-                <div class="hero-marquee-item"><img src="/assets/images/products/stellar-coach2.png" alt="Stellar Coach" class="hero-marquee-image"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Us Section (Flowbite Feature List) -->
-    <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
-      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-        <!-- Section Header -->
-        <div class="max-w-screen-md mx-auto mb-12 text-center">
-          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 scroll-fade-in">
-            About Us
-          </span>
-          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white scroll-fade-in">
-            What is Stellar AIz?
-          </h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400 scroll-fade-in">
-            We are a team of AI implementation professionals.<br class="hidden sm:inline">
-            We drive your AI success through both strategy and execution.
-          </p>
-        </div>
-
-        <!-- Feature Grid -->
-        <div class="grid gap-8 md:grid-cols-3">
-          <!-- Strategy x Hyper Rapid Development -->
-          <div class="group p-6 bg-white rounded-lg shadow-sm dark:bg-gray-900 scroll-fade-up transition-all duration-300 hover:shadow-xl hover:-translate-y-2" style="transition-delay: 0ms;">
-            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-blue-100 dark:bg-blue-900 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
-              <svg class="w-6 h-6 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Strategy x Hyper Rapid Development</h3>
-            <p class="text-gray-500 dark:text-gray-400">
-              From strategy formulation to PoC development, we provide end-to-end support. We ensure results with both speed and quality, not just theoretical plans.
-            </p>
-          </div>
-
-          <!-- Agile & Pragmatic -->
-          <div class="group p-6 bg-white rounded-lg shadow-sm dark:bg-gray-900 scroll-fade-up transition-all duration-300 hover:shadow-xl hover:-translate-y-2" style="transition-delay: 100ms;">
-            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-purple-100 dark:bg-purple-900 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
-              <svg class="w-6 h-6 text-purple-600 dark:text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Agile & Pragmatic</h3>
-            <p class="text-gray-500 dark:text-gray-400">
-              Working prototypes over perfect requirements. We find the optimal solution together through tangible prototypes you can actually experience.
-            </p>
-          </div>
-
-          <!-- Culture of Embracing the Unknown -->
-          <div class="group p-6 bg-white rounded-lg shadow-sm dark:bg-gray-900 scroll-fade-up transition-all duration-300 hover:shadow-xl hover:-translate-y-2" style="transition-delay: 200ms;">
-            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-cyan-100 dark:bg-cyan-900 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
-              <svg class="w-6 h-6 text-cyan-600 dark:text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Culture of Embracing the Unknown</h3>
-            <p class="text-gray-500 dark:text-gray-400">
-              We boldly take on new technologies and challenges. Instead of reasons why we can't, we focus on how we can, co-creating innovation together.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Principles Section (Flowbite Feature List with Icons) -->
-    <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
-      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-        <!-- Section Header -->
-        <div class="max-w-screen-md mx-auto mb-12 text-center">
-          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-purple-800 bg-purple-100 rounded-full dark:bg-purple-900 dark:text-purple-300">
-            Our Principles
-          </span>
-          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white">
-            Our Guiding Principles
-          </h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400">
-            Five missions that Stellar AIz holds dear
-          </p>
-        </div>
-
-        <!-- Feature List with Numbers -->
-        <div class="max-w-4xl mx-auto space-y-4">
-          <!-- Principle 1 -->
-          <div class="flex items-start p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gray-300 dark:bg-gray-900 dark:border-gray-700 dark:hover:border-gray-600">
-            <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-xl bg-slate-900 dark:bg-slate-700 mr-6">
-              <span class="text-2xl font-bold text-white">01</span>
-            </div>
-            <div class="flex-1 pt-1">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Build First, Even with Ambiguous Requirements</h3>
-              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Rather than waiting for perfect specifications, we start conversations through prototypes. We clarify requirements by working with real products.</p>
-            </div>
-          </div>
-
-          <!-- Principle 2 -->
-          <div class="flex items-start p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gray-300 dark:bg-gray-900 dark:border-gray-700 dark:hover:border-gray-600">
-            <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-xl bg-slate-900 dark:bg-slate-700 mr-6">
-              <span class="text-2xl font-bold text-white">02</span>
-            </div>
-            <div class="flex-1 pt-1">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Outcome-Based Compensation Model</h3>
-              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We are evaluated by value delivered, not hours spent. Your success is our success.</p>
-            </div>
-          </div>
-
-          <!-- Principle 3 -->
-          <div class="flex items-start p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gray-300 dark:bg-gray-900 dark:border-gray-700 dark:hover:border-gray-600">
-            <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-xl bg-slate-900 dark:bg-slate-700 mr-6">
-              <span class="text-2xl font-bold text-white">03</span>
-            </div>
-            <div class="flex-1 pt-1">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Engineering Over Project Management</h3>
-              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Implementation over management. We get hands-on and let code speak. That is the fastest path to problem-solving.</p>
-            </div>
-          </div>
-
-          <!-- Principle 4 -->
-          <div class="flex items-start p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gray-300 dark:bg-gray-900 dark:border-gray-700 dark:hover:border-gray-600">
-            <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-xl bg-slate-900 dark:bg-slate-700 mr-6">
-              <span class="text-2xl font-bold text-white">04</span>
-            </div>
-            <div class="flex-1 pt-1">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Strategy Focused on Problem-Solving</h3>
-              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Technology is a means, not an end. The true goal is solving problems. We pursue strategies that maximize business impact.</p>
-            </div>
-          </div>
-
-          <!-- Principle 5 -->
-          <div class="flex items-start p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all hover:border-gray-300 dark:bg-gray-900 dark:border-gray-700 dark:hover:border-gray-600">
-            <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-xl bg-slate-900 dark:bg-slate-700 mr-6">
-              <span class="text-2xl font-bold text-white">05</span>
-            </div>
-            <div class="flex-1 pt-1">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer Impact as Top Priority</h3>
-              <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Every decision is based on customer value. We prioritize long-term trust over short-term gains.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section (Flowbite Feature Cards) -->
-    <section id="services" class="py-16 md:py-24 bg-white dark:bg-gray-900">
-      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-        <!-- Section Header -->
-        <div class="max-w-screen-md mx-auto mb-12 text-center">
-          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 scroll-fade-in">
-            Services
-          </span>
-          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white scroll-fade-in">
-            Our Services
-          </h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400 scroll-fade-in">
-            Comprehensive AI implementation support from strategy to development
-          </p>
-        </div>
-
-        <!-- Service Cards -->
-        <div class="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
-          <!-- AI Strategy Consulting - Hidden for now
-          <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700 scroll-fade-left" style="transition-delay: 0ms;">
-            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-blue-100 dark:bg-blue-900">
-              <svg class="w-6 h-6 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">AI Strategy Consulting</h3>
-            <p class="mb-4 text-gray-500 dark:text-gray-400">
-              Starting from business challenges, we formulate optimal AI strategies and design roadmaps that maximize ROI.
-            </p>
-            <ul class="mb-4 space-y-2 text-sm text-gray-500 dark:text-gray-400">
-              <li class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Current State Analysis & Issue Identification
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                AI Implementation Roadmap
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                ROI Estimation
-              </li>
-            </ul>
-          </div>
-          -->
-
-          <!-- Full Custom AI Agent Development -->
-          <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700 scroll-fade-left" style="transition-delay: 100ms;">
-            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-purple-100 dark:bg-purple-900">
-              <svg class="w-6 h-6 text-purple-600 dark:text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Full Custom AI Agent Development</h3>
-            <p class="mb-4 text-gray-500 dark:text-gray-400">
-              We build AI agents from scratch, fully optimized for your business operations. We handle even complex requirements.
-            </p>
-            <ul class="mb-4 space-y-2 text-sm text-gray-500 dark:text-gray-400">
-              <li class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Requirements Definition & Design
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Full Scratch Development
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Legacy System Integration
-              </li>
-            </ul>
-          </div>
-
-          <!-- Low-Code AI Agent Development -->
-          <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700 scroll-fade-left" style="transition-delay: 200ms;">
-            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-cyan-100 dark:bg-cyan-900">
-              <svg class="w-6 h-6 text-cyan-600 dark:text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Low-Code AI Agent Development</h3>
-            <p class="mb-4 text-gray-500 dark:text-gray-400">
-              Using low-code tools like Dify, we build AI agents quickly and cost-effectively.
-            </p>
-            <ul class="mb-4 space-y-2 text-sm text-gray-500 dark:text-gray-400">
-              <li class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Deploy in as Little as 2 Weeks
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Cost-Effective Solutions
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Operations Handover Support
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="mt-12 text-center">
-          <a href="/pages/inquiry/" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 transition-colors">
-            Inquire About Our Services
-            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="py-16 md:py-24 bg-white dark:bg-gray-900">
-      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-        <!-- Section Header -->
-        <div class="max-w-screen-md mx-auto mb-12 text-center">
-          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 scroll-fade-in">
-            Products
-          </span>
-          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white scroll-fade-in">
-            Our Products
-          </h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400 scroll-fade-in">
-            Proprietary products that bring the power of AI to your business
-          </p>
-        </div>
-
-        <!-- Product Cards -->
-        <div class="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
-          <!-- Stellar Economics (ebisu) -->
-          <a href="/en/pages/products/ebisu/" class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 dark:bg-gray-800 dark:border-gray-700 scroll-fade-up" style="transition-delay: 0ms;">
-            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-blue-100 dark:bg-blue-900">
-              <svg class="w-6 h-6 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">Stellar Economics</h3>
-            <p class="mb-4 text-gray-500 dark:text-gray-400">
-              An economic analysis platform that simulates AI/Generative AI implementation impact and supports data-driven decision making.
-            </p>
-            <span class="inline-flex items-center text-sm font-medium text-blue-600 group-hover:underline">
-              Learn more
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-              </svg>
-            </span>
-          </a>
-
-          <!-- Stellar Coach (tenjin) -->
-          <a href="/en/pages/products/tenjin/" class="group block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 dark:bg-gray-800 dark:border-gray-700 scroll-fade-up" style="transition-delay: 100ms;">
-            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-emerald-100 dark:bg-emerald-900">
-              <svg class="w-6 h-6 text-emerald-600 dark:text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white group-hover:text-emerald-600 transition-colors">Stellar Coach</h3>
-            <p class="mb-4 text-gray-500 dark:text-gray-400">
-              An AI coaching platform that provides real-time conversation support. Applicable across sales, interviews, training, and more.
-            </p>
-            <span class="inline-flex items-center text-sm font-medium text-emerald-600 group-hover:underline">
-              Learn more
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Case Studies Section (Grid Layout) -->
-    <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
-      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-        <!-- Section Header -->
-        <div class="max-w-screen-md mx-auto mb-12 text-center">
-          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-green-800 bg-green-100 rounded-full dark:bg-green-900 dark:text-green-300 scroll-fade-in">
-            Case Studies
-          </span>
-          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white scroll-fade-in">
-            Track Record Highlights
-          </h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400 scroll-fade-in">
-            Successfully driving AI adoption across diverse industries
-          </p>
-        </div>
-
-        <!-- Case Studies Grid -->
-        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Manufacturing 1 -->
-          <figure class="flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-gray-900 dark:border-gray-700 scroll-fade-up" style="transition-delay: 0ms;">
-            <blockquote class="mb-6">
-              <div class="flex items-center gap-2 mb-4">
-                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                </svg>
-                <span class="text-sm font-medium text-blue-600 dark:text-blue-400">Manufacturing</span>
-              </div>
-              <p class="text-base text-gray-900 dark:text-white">
-                AI/Generative AI implementation impact assessment and roadmap for entire value chain
-              </p>
-            </blockquote>
-            <figcaption class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-              <div class="font-semibold text-gray-900 dark:text-white">Major Electronics Manufacturer</div>
-              <div class="flex items-center gap-1 px-3 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                6 Weeks
-              </div>
-            </figcaption>
-          </figure>
-
-          <!-- Manufacturing 2 -->
-          <figure class="flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-gray-900 dark:border-gray-700 scroll-fade-up" style="transition-delay: 50ms;">
-            <blockquote class="mb-6">
-              <div class="flex items-center gap-2 mb-4">
-                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                </svg>
-                <span class="text-sm font-medium text-blue-600 dark:text-blue-400">Manufacturing</span>
-              </div>
-              <p class="text-base text-gray-900 dark:text-white">
-                AI/Generative AI implementation strategy for manufacturing inspection and equipment maintenance
-              </p>
-            </blockquote>
-            <figcaption class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-              <div class="font-semibold text-gray-900 dark:text-white">Major Automotive Manufacturer</div>
-              <div class="flex items-center gap-1 px-3 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                6 Weeks
-              </div>
-            </figcaption>
-          </figure>
-
-          <!-- Financial Institution -->
-          <figure class="flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-gray-900 dark:border-gray-700 scroll-fade-up" style="transition-delay: 100ms;">
-            <blockquote class="mb-6">
-              <div class="flex items-center gap-2 mb-4">
-                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                <span class="text-sm font-medium text-purple-600 dark:text-purple-400">Financial Services</span>
-              </div>
-              <p class="text-base text-gray-900 dark:text-white">
-                AI transformation roadmap and architecture design for entire value chain
-              </p>
-            </blockquote>
-            <figcaption class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-              <div class="font-semibold text-gray-900 dark:text-white">Major Bank</div>
-              <div class="flex items-center gap-1 px-3 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                8 Weeks
-              </div>
-            </figcaption>
-          </figure>
-
-          <!-- Retail -->
-          <figure class="flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-gray-900 dark:border-gray-700 scroll-fade-up" style="transition-delay: 150ms;">
-            <blockquote class="mb-6">
-              <div class="flex items-center gap-2 mb-4">
-                <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
-                </svg>
-                <span class="text-sm font-medium text-amber-600 dark:text-amber-400">Retail</span>
-              </div>
-              <p class="text-base text-gray-900 dark:text-white">
-                Digital ecosystem strategy with a 10-year vision
-              </p>
-            </blockquote>
-            <figcaption class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-              <div class="font-semibold text-gray-900 dark:text-white">Major Department Store</div>
-              <div class="flex items-center gap-1 px-3 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                8 Weeks
-              </div>
-            </figcaption>
-          </figure>
-
-          <!-- Tech -->
-          <figure class="flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-gray-900 dark:border-gray-700 scroll-fade-up" style="transition-delay: 200ms;">
-            <blockquote class="mb-6">
-              <div class="flex items-center gap-2 mb-4">
-                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                </svg>
-                <span class="text-sm font-medium text-green-600 dark:text-green-400">Tech</span>
-              </div>
-              <p class="text-base text-gray-900 dark:text-white">
-                Sales strategy for generative AI business
-              </p>
-            </blockquote>
-            <figcaption class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-              <div class="font-semibold text-gray-900 dark:text-white">Major Japanese Tech Company</div>
-              <div class="flex items-center gap-1 px-3 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Strategy
-              </div>
-            </figcaption>
-          </figure>
-
-          <!-- International -->
-          <figure class="flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-gray-900 dark:border-gray-700 scroll-fade-up" style="transition-delay: 250ms;">
-            <blockquote class="mb-6">
-              <div class="flex items-center gap-2 mb-4">
-                <svg class="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                <span class="text-sm font-medium text-cyan-600 dark:text-cyan-400">International</span>
-              </div>
-              <p class="text-base text-gray-900 dark:text-white">
-                Fundraising prototype development for telemedicine startup
-              </p>
-            </blockquote>
-            <figcaption class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
-              <div class="font-semibold text-gray-900 dark:text-white">Switzerland</div>
-              <div class="flex items-center gap-1 px-3 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                </svg>
-                Development
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <div class="mt-12 text-center">
-        <a href="/pages/record/" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 transition-colors">
-          View Full Track Record
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <!-- Team Section (Flowbite Team Cards) -->
-    <section class="py-16 md:py-24 bg-white dark:bg-gray-900">
-      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-        <!-- Section Header -->
-        <div class="max-w-screen-md mx-auto mb-12 text-center">
-          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-purple-800 bg-purple-100 rounded-full dark:bg-purple-900 dark:text-purple-300 scroll-fade-in">
-            Our Team
-          </span>
-          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white scroll-fade-in">
-            Team Members
-          </h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400 scroll-fade-in">
-            AI implementation professionals supporting your business
-          </p>
-        </div>
-
-        <!-- Team Cards Grid -->
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
-          <!-- Member 1 - Nobuaki Fukumoto -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center dark:bg-gray-800 scroll-fade-up" style="transition-delay: 0ms;">
-            <img src="/assets/images/members/Nobuaki%20Fukumoto.jpeg" alt="Nobuaki Fukumoto" class="w-28 h-28 mx-auto mb-4 rounded-full object-cover">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Nobuaki Fukumoto</h3>
-            <p class="text-pink-600 dark:text-pink-400 mb-3 text-sm">Co-founder & CEO</p>
-            <p class="text-base text-gray-500 dark:text-gray-400">
-              ex-McKinsey & Company. Consistently supported AI/DX strategy formulation and execution across financial services, automotive, and insurance industries. Collaborated globally with professionals from the US, UK, Southeast Asia, and Korea to deliver client impact. Numerous keynote speeches on generative AI at Teradata Japan, SHIFT Technology, and more.
-            </p>
-          </div>
-          <!-- Member 2 -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center dark:bg-gray-800 scroll-fade-up" style="transition-delay: 50ms;">
-            <img src="/assets/images/members/Hiromu%20Ochiai.png" alt="Hiromu Ochiai" class="w-28 h-28 mx-auto mb-4 rounded-full object-cover">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Hiromu Ochiai</h3>
-            <p class="text-blue-600 dark:text-blue-400 mb-3 text-sm">Co-founder & CTO</p>
-            <p class="text-base text-gray-500 dark:text-gray-400">
-              ex-McKinsey & Company. Led both technical and strategic aspects from generative AI solution development to large-scale DX projects. Research and development experience at National Cancer Center and University of Tokyo, and tech lead experience in Berlin. Numerous international conference presentations and publications. Kyoto University graduate.
-            </p>
-          </div>
-          <!-- Member 2 -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center dark:bg-gray-800 scroll-fade-up" style="transition-delay: 50ms;">
-            <img src="/assets/images/members/Takumi%20Miyake.png" alt="Takumi Miyake" class="w-28 h-28 mx-auto mb-4 rounded-full object-cover">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Takumi Miyake</h3>
-            <p class="text-purple-600 dark:text-purple-400 mb-3 text-sm">Strategy Consultant</p>
-            <p class="text-base text-gray-500 dark:text-gray-400">
-              ex-McKinsey & Company. Led projects including operations improvement, mid-term planning, and company-wide transformation.<br>McGill University MBA.
-            </p>
-          </div>
-          <!-- Member 3 -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center dark:bg-gray-800 scroll-fade-up" style="transition-delay: 100ms;">
-            <img src="/assets/images/members/Yuya%20Muraki.png" alt="Yuya Muraki" class="w-28 h-28 mx-auto mb-4 rounded-full object-cover">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Yuya Muraki</h3>
-            <p class="text-cyan-600 dark:text-cyan-400 mb-3 text-sm">Strategy Consultant</p>
-            <p class="text-base text-gray-500 dark:text-gray-400">
-              ex-McKinsey & Company. Supported numerous corporate transformations from strategy to execution.<br>University of South Florida Master's.
-            </p>
-          </div>
-          <!-- Member 4 - Satoru Furuta -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center dark:bg-gray-800 scroll-fade-up" style="transition-delay: 150ms;">
-            <img src="/assets/images/members/Satoru%20Furuta.png" alt="Satoru Furuta" class="w-28 h-28 mx-auto mb-4 rounded-full object-cover">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Satoru Furuta</h3>
-            <p class="text-orange-600 dark:text-orange-400 mb-3 text-sm">Full-Stack Engineer</p>
-            <p class="text-base text-gray-500 dark:text-gray-400">
-              Worked on development and design of numerous products at LINE and Recruit. Expert in ML annotation tools and AI-powered security.<br>University of Tokyo graduate.
-            </p>
-          </div>
-          <!-- Member 5 - A.F -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center dark:bg-gray-800 scroll-fade-up" style="transition-delay: 200ms;">
-            <div class="w-28 h-28 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
-              <svg class="w-14 h-14 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">A.F</h3>
-            <p class="text-green-600 dark:text-green-400 mb-3 text-sm">Strategy Consultant / Engineer</p>
-            <p class="text-base text-gray-500 dark:text-gray-400">
-              ex-McKinsey & Company. Supported digital strategy formulation and execution for enterprises as a consultant.<br>University of Tokyo graduate.
-            </p>
-          </div>
-          <!-- Member 6 - Alex -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center dark:bg-gray-800 scroll-fade-up" style="transition-delay: 250ms;">
-            <div class="w-28 h-28 mx-auto mb-4 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center">
-              <svg class="w-14 h-14 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Alex</h3>
-            <p class="text-amber-600 dark:text-amber-400 mb-3 text-sm">Strategy Consultant / Full-Stack Engineer</p>
-            <p class="text-base text-gray-500 dark:text-gray-400">
-              After studying Computer Science at a US university, led AI/Robotics/DX initiatives from concept to implementation for global manufacturing and pharmaceutical enterprises. Extensive cross-sector and international experience including Digital Twin × AI research at an LA-based startup, leading Japan-Pakistan government projects, advising US robotics startups, and Physical AI development. Keynote speaker at international conferences.
-            </p>
-          </div>
-          <!-- Member 7 - K.H -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center dark:bg-gray-800 scroll-fade-up" style="transition-delay: 300ms;">
-            <div class="w-28 h-28 mx-auto mb-4 rounded-full bg-gradient-to-br from-red-500 to-rose-600 flex items-center justify-center">
-              <svg class="w-14 h-14 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">K.H</h3>
-            <p class="text-red-600 dark:text-red-400 mb-3 text-sm">Strategy Consultant</p>
-            <p class="text-base text-gray-500 dark:text-gray-400">
-              ex-McKinsey & Company Engagement Manager. Led DX initiatives for numerous major enterprises. Founded an edge computing company before joining McKinsey. Currently a core member of a globally active AI unicorn, working on cutting-edge AI business.
-            </p>
-          </div>
-          <!-- Member 8 - S.H -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center dark:bg-gray-800 scroll-fade-up" style="transition-delay: 350ms;">
-            <div class="w-28 h-28 mx-auto mb-4 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-              <svg class="w-14 h-14 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">S.H</h3>
-            <p class="text-indigo-600 dark:text-indigo-400 mb-3 text-sm">Strategy Consultant</p>
-            <p class="text-base text-gray-500 dark:text-gray-400">
-              ex-McKinsey & Company. Led projects in corporate strategy, M&A strategy, technology strategy, operational efficiency, DX, and operations transformation.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Company Info Section -->
-    <section id="company" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
-      <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
-        <!-- Section Header -->
-        <div class="max-w-screen-md mx-auto mb-12 text-center">
-          <span class="inline-flex items-center mb-4 px-3 py-1 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 scroll-fade-in">
-            Company
-          </span>
-          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl dark:text-white scroll-fade-in">
-            Company Overview
-          </h2>
-        </div>
-
-        <!-- Company Info Content -->
-        <div class="grid gap-8 lg:grid-cols-2 max-w-5xl mx-auto items-start">
-          <!-- Company Details -->
-          <div class="bg-white dark:bg-gray-900 rounded-lg p-8 scroll-fade-up">
-            <dl class="space-y-6">
-              <div>
-                <dt class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Company Name</dt>
-                <dd class="text-lg text-gray-900 dark:text-white">Stellar AIz Inc.</dd>
-              </div>
-              <div>
-                <dt class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Representatives</dt>
-                <dd class="text-lg text-gray-900 dark:text-white">Nobuaki Fukumoto, Hiromu Ochiai</dd>
-              </div>
-              <div>
-                <dt class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Business</dt>
-                <dd class="text-lg text-gray-900 dark:text-white">AI Product Development</dd>
-              </div>
-              <div>
-                <dt class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Location</dt>
-                <dd class="text-lg text-gray-900 dark:text-white">
-                  SENQ Meguro, 8F Meguro Center Building<br>
-                  3-2-1 Kamiosaki, Shinagawa-ku<br>
-                  Tokyo 141-0021, Japan
-                </dd>
-              </div>
-            </dl>
-          </div>
-
-          <!-- Google Maps -->
-          <div class="bg-white dark:bg-gray-900 rounded-lg overflow-hidden scroll-fade-up" style="transition-delay: 100ms;">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.760742983625!2d139.71481257578566!3d35.633624372602554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b50bbcd1547%3A0xd01923286911ff05!2zU0VOUeebrum7kg!5e0!3m2!1sja!2sjp!4v1757831128335!5m2!1sja!2sjp"
-              width="100%"
-              height="350"
-              style="border:0; filter: grayscale(.8);"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              class="w-full">
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer Component -->
-  <div id="footer-placeholder">
-<!-- COMPONENT:footer-placeholder:START -->
-<!-- Footer - English -->
-<footer class="site-footer bg-gray-900 text-white py-16 md:py-20">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8">
-    <div class="footer-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
-      <!-- Company Info -->
-      <div>
-        <div class="mb-4">
-          <img src="/assets/images/logo/stellar-aiz-logo-white-2.svg" alt="Stellar AIz" class="h-10">
-        </div>
-        <p class="text-gray-300 mb-2">Mastering AI Execution with Strategy and Hyper Speed</p>
-        <p class="text-gray-400 text-sm">Stellar AIz</p>
-      </div>
-
-      <!-- Sitemap -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">Sitemap</h3>
-        <nav aria-label="Footer navigation">
-          <ul class="space-y-2">
-            <li><a href="/en/" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
-            <li><a href="/en/pages/services/" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
-            <li><a href="/en/pages/record/" class="text-gray-300 hover:text-white transition-colors">Case Studies</a></li>
-            <li><a href="/en/pages/about/" class="text-gray-300 hover:text-white transition-colors">About</a></li>
-            <li><a href="/en/pages/news/" class="text-gray-300 hover:text-white transition-colors">News</a></li>
-            <li><a href="/en/pages/inquiry/" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- Products -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">Products</h3>
-        <ul class="space-y-2">
-          <li>
-            <a href="/en/pages/products/ebisu/" class="text-gray-300 hover:text-white transition-colors flex items-center">
-              <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-              </svg>
-              Stellar Economics
-            </a>
-          </li>
-          <li>
-            <a href="/en/pages/products/tenjin/" class="text-gray-300 hover:text-white transition-colors flex items-center">
-              <svg class="w-4 h-4 mr-2 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-              </svg>
-              Stellar Coach
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div>
-        <h3 class="text-lg font-bold mb-4">Contact Us</h3>
-        <p class="text-gray-300 mb-4">Get in touch for AI consulting</p>
-        <a href="/en/pages/inquiry/" class="inline-flex items-center text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition-colors">
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          Contact Us
-        </a>
-      </div>
+<section class="sec" id="position">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Why Stellar AIz</div><h2 class="h2">One team that closes the gap<br>between strategy and build.</h2></div>
+      <p>Deep engagement with strategy and operations, and the engineering to take AI from PoC to production and beyond. Very few firms can offer both in a single team.</p>
     </div>
-
-    <!-- Footer Bottom -->
-    <div class="footer-bottom pt-8 border-t border-gray-700">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-gray-400 text-sm">&copy; 2025 Stellar AIz. All rights reserved.</p>
-        <div class="flex gap-6">
-          <a href="/en/pages/privacy/" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-        </div>
-      </div>
+    <div class="gaps3">
+        <div class="gap"><h3 class="h3"><span>01</span>Where strategy firms stop</h3><p>Without experience building AI products, they hand implementation to others. Requirements degrade at every handoff and projects stall at the PoC.</p></div>
+        <div class="gap"><h3 class="h3"><span>02</span>Where AI vendors and SIers stop</h3><p>Your work is bent to fit a generic SaaS, or the gains from efficiency stay with the vendor under time-and-materials contracts. They rarely touch organization or rules.</p></div>
+        <div class="gap us"><h3 class="h3"><span>03</span>Stellar AIz</h3><p>Strategy consultants who are also engineers own the work from concept to production architecture, and get you past the PoC into real use.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="sec dark" id="value">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Who We Are</div><h2 class="h2">Deep expertise, fitted to your business.</h2></div>
+      <p>As a team of AI practitioners, we combine development speed with a hands-on approach, and lead your AI initiatives to success through strategy and implementation together.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar"><span class="no">01</span><div class="k">STRATEGY</div><h3 class="h3">AI-driven strategy, organization and rules, designed end to end</h3><p>We design the strategy, organization and rules that make AI transformation real, from the earliest concept.</p></div>
+      <div class="pillar"><span class="no">02</span><div class="k">BUSINESS FIT</div><h3 class="h3">We fit AI to your work, not your work to AI</h3><p>Instead of generic AI, we build and deliver AI tailored to your own operations.</p></div>
+      <div class="pillar"><span class="no">03</span><div class="k">DELIVERY</div><h3 class="h3">Strategy consultants who are also AI engineers</h3><p>One person owns both strategy and engineering, so the intent behind each requirement survives into the build.</p></div>
+      <div class="pillar"><span class="no">04</span><div class="k">EXPERTISE</div><h3 class="h3">World-class strategy and AI engineering</h3><p>We deliver and customize capabilities built on the know-how of top global strategy firms and world-class engineers.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Explore</div>
+        <h2 class="h2">Get to know Stellar AIz</h2>
+      </div>
+      <p>Our services, our own product, our track record and our people.</p>
+    </div>
+    <div class="tiles tiles2">
+      <a href="pages/services/" class="tile">
+        <div class="k">SERVICES</div>
+        <h3 class="h3">Services</h3>
+        <p>Three capabilities: AI strategy consulting, AI agent development and AI harness deployment.</p>
+        <span class="more">See our services <span class="arw">→</span></span>
+      </a>
+      <a href="pages/doggies/" class="tile">
+        <div class="k">PRODUCT</div>
+        <h3 class="h3">AI harness doggies</h3>
+        <p>Our own product that runs consulting methods and project context inside your environment.</p>
+        <span class="more">Meet doggies <span class="arw">→</span></span>
+      </a>
+      <a href="pages/record/" class="tile">
+        <div class="k">TRACK RECORD</div>
+        <h3 class="h3">Our Work</h3>
+        <p>Selected projects across six industries, including finance, automotive and telecom, taken all the way to production.</p>
+        <span class="more">See our work <span class="arw">→</span></span>
+      </a>
+      <a href="pages/members/" class="tile">
+        <div class="k">PEOPLE</div>
+        <h3 class="h3">People</h3>
+        <p>Members who are both strategy consultants and engineers, and the backgrounds of our leadership.</p>
+        <span class="more">Meet our people <span class="arw">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">News</div>
+        <h2 class="h2">News</h2>
+      </div>
+      <p class="ta-r"><a href="pages/news/" class="more">All news <span class="arw">→</span></a></p>
+    </div>
+    <div class="news">
+      <a href="pages/news/"><time>2026.10.22</time><span class="cat">Announcement</span><span class="tt">Stellar AIz Website Has Been Renewed</span><span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+<div class="cta">
+  <div class="wrap">
+    <div>
+      <h2 class="h2">Take AI beyond the PoC.</h2>
+      <p>Talk to us about AI strategy, AI agent development or bringing doggies into your organization.</p>
+    </div>
+    <a href="pages/inquiry/" class="btn">Contact <span class="arw">→</span></a>
+  </div>
+</div>
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div><img src="../assets/img/logo-white.svg" alt="Stellar AIz" width="128" height="24"><p>An AI-native firm that delivers AI strategy<br>and AI product development as one team</p></div>
+      <div><h5>SERVICES</h5><ul><li><a href="pages/services/#consulting">AI Strategy Consulting</a></li><li><a href="pages/services/#engineering">AI Agent Development</a></li><li><a href="pages/doggies/">AI Harness doggies</a></li></ul></div>
+      <div><h5>ABOUT</h5><ul><li><a href="pages/record/">Our Work</a></li><li><a href="pages/members/">People</a></li><li><a href="pages/news/">News</a></li></ul></div>
+      <div><h5>COMPANY</h5><ul><li><a href="pages/about/">Company</a></li><li><a href="pages/inquiry/">Contact</a></li><li><a href="pages/privacy/">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="copy">© 2026 Stellar AIz Inc.</div>
   </div>
 </footer>
-<!-- COMPONENT:footer-placeholder:END -->
-</div>
 
-  <!-- Flowbite JS -->
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="../assets/js/site.js" defer></script>
 </body>
 </html>

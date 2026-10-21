@@ -4,100 +4,55 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the Stellar AIz corporate website - a static site deployed to GitHub Pages. The site is built with vanilla HTML, CSS, and JavaScript, using Tailwind CSS via CDN for styling.
+This is the Stellar AIz corporate website - a static site deployed to GitHub Pages from `/docs/`. It is plain HTML, one shared CSS file and one small JavaScript file, with no framework and no CDN dependencies except Google Fonts.
 
 ## Development
 
-Since this is a static site with no build process:
-- Files in `/docs/` are served directly by GitHub Pages
-- No `npm install` or build commands needed
-- Edit HTML/CSS/JS files directly
-- Changes are live after git push to main branch
-
-To develop locally:
-- Open `/docs/index.html` in a browser
-- Use a local server (e.g., `python -m http.server 3000` in `/docs/`) for proper relative path handling
+- Files in `/docs/` are served directly by GitHub Pages (custom domain in `docs/CNAME`)
+- No `npm install` or build step is needed to edit the site
+- Preview locally with a server so directory URLs work: `python -m http.server 3000 --directory docs`
 
 ## Architecture
 
 ### Directory Structure
-- `/docs/` - Website files (GitHub Pages root)
-  - `/assets/css/` - Custom CSS files (common.css contains design system)
-  - `/assets/js/` - JavaScript files (scroll-animations.js, tailwind-config.js)
-  - `/assets/images/` - Image assets organized by type
-- `/spec/` - Detailed component and page specifications in Markdown
+- `/docs/index.html` - Top page (Japanese); `/docs/en/` mirrors every page in English
+- `/docs/pages/<name>/index.html` - Pages: services, doggies, record (track record), members, news, about (company), inquiry (+ `thanks.html`), privacy
+- `/docs/pages/products/...` - Redirect stubs from the previous site's product pages to `/pages/services/`
+- `/docs/assets/css/site.css` - All styles (minified)
+- `/docs/assets/js/site.js` - Menu, filters, member modal, contact form, hero motion
+- `/docs/assets/img/` - Images as WebP + JPEG pairs at fixed widths (`name-<width>.webp/.jpg`)
+- `/docs/assets/icons/` - favicon and app icons
+- `/docs/404.html`, `sitemap.xml`, `robots.txt`
+- `/spec/` - Specifications from the previous site (partly outdated)
 
-### Technology Stack
-- **HTML5** with semantic markup and Japanese language support
-- **Tailwind CSS** (CDN v3.x) - Primary styling framework
-- **Vanilla JavaScript** - No frameworks, uses modern APIs like Intersection Observer
-- **Custom CSS** - Design system extensions in common.css
-
-### Design System
-
-Custom Stellar AIz design tokens built on Tailwind:
-
-**Custom Classes:**
-- `.btn-primary-stellar`, `.btn-secondary-stellar`, `.btn-accent-stellar` - Button variants
-- `.section-title-stellar`, `.section-subtitle-stellar` - Typography
-- `.card-stellar` - Card component
-- `.scroll-fade-*`, `.scroll-stagger-*` - Scroll animations
-
-**Color Extensions:**
-- stellar-primary: #0066FF
-- stellar-accent: #00D9FF
-- stellar-dark: #1a202c
-
-**Animation System:**
-- Scroll-triggered animations using Intersection Observer
-- CSS transitions for hover states
-- Respects prefers-reduced-motion
-
-### Key Implementation Patterns
-
-1. **Mobile-First Responsive Design**
-   - Use Tailwind's responsive prefixes (md:, lg:)
-   - Test all changes on mobile viewports
-
-2. **Japanese Content**
-   - Site is primarily in Japanese
-   - Use appropriate fonts and line-height for readability
-
-3. **Performance**
-   - Minimize external dependencies
-   - Use CDN for libraries
-   - Optimize images before adding
-
-4. **Accessibility**
-   - Semantic HTML structure
-   - ARIA labels for interactive elements
-   - Keyboard navigation support
+### Conventions
+- **Links are relative** (`../services/`), so the site also works under a sub-path
+- **Language switch**: every Japanese page has an English twin at the same path under `/en/`; keep them in sync and keep the `hreflang` links in `<head>` correct
+- **Content Security Policy** is set per page with a `<meta http-equiv>` tag. Scripts and styles must come from files in `/assets/`; do not add inline `<script>` code, inline `style=""` attributes or new third-party hosts without updating the policy on every page. JSON data blocks (`type="application/json"`, `application/ld+json`) are fine
+- **Images**: use `<picture>` with WebP `srcset` and a JPEG fallback, plus `width`, `height`, `loading="lazy"` and `decoding="async"`
+- **Contact form** posts to Formspree (`https://formspree.io/f/manrvzgw`) with the same field names as before; `_next` points to the thanks page
+- **Fonts**: Latin text uses Georgia (Gelasio as fallback), Japanese uses Noto Sans JP
+- Accessibility: skip link, visible focus states, `prefers-reduced-motion` respected
 
 ## Common Tasks
 
-### Adding a New Page
-1. Create HTML file in `/docs/`
-2. Copy header/footer structure from index.html
-3. Follow existing naming conventions for assets
-4. Update navigation links in all pages
+### Editing text
+Edit the page's `index.html` and its `/en/` twin. Update `<meta name="description">` if the page's purpose changes.
 
-### Modifying Animations
-- Scroll animations: Edit `/docs/assets/js/scroll-animations.js`
-- CSS animations: Edit animation keyframes in `/docs/assets/css/common.css`
-- Add animation classes to HTML elements as needed
+### Adding a page
+1. Copy an existing page folder under `/docs/pages/` (and `/docs/en/pages/`)
+2. Update `<title>`, description, canonical, `hreflang` and `og:url`
+3. Add it to the header and footer navigation on every page, and to `sitemap.xml`
 
-### Updating the Design System
-- Global styles: `/docs/assets/css/common.css`
-- Tailwind config: `/docs/assets/js/tailwind-config.js`
-- Maintain consistency with existing patterns
+### Adding news
+Add an `<article class="nitem">` at the top of `/docs/pages/news/index.html` (and the English page), and update the two newest items on the top pages
 
 ## Important Notes
 
 - Always test in multiple browsers (Chrome, Safari, Firefox)
-- Verify mobile responsiveness for all changes
-- Images should be optimized for web (prefer WebP/JPEG)
+- Verify mobile responsiveness for all changes (no horizontal scroll at 375px)
+- Check the browser console for Content Security Policy errors after changes
 - Keep file sizes minimal for fast loading
-- Follow established code style and formatting
 
 ## Claude Code Skills
 

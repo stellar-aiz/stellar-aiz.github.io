@@ -1,173 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- Homepage -->
-  <url>
-    <loc>https://stellar-aiz.com/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://stellar-aiz.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- News -->
-  <url>
-    <loc>https://stellar-aiz.com/pages/news/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/news/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/news/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/news/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://stellar-aiz.com/en/pages/news/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/news/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/news/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/news/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Case Studies / Record -->
-  <url>
-    <loc>https://stellar-aiz.com/pages/record/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/record/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/record/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/record/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://stellar-aiz.com/en/pages/record/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/record/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/record/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/record/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Inquiry -->
-  <url>
-    <loc>https://stellar-aiz.com/pages/inquiry/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/inquiry/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/inquiry/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/inquiry/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://stellar-aiz.com/en/pages/inquiry/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/inquiry/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/inquiry/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/inquiry/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Privacy Policy -->
-  <url>
-    <loc>https://stellar-aiz.com/pages/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/privacy/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://stellar-aiz.com/en/pages/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/privacy/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- Products - Index -->
-  <url>
-    <loc>https://stellar-aiz.com/pages/products/</loc>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Products - Stellar Economics (Ebisu) -->
-  <url>
-    <loc>https://stellar-aiz.com/pages/products/ebisu/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/products/ebisu/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/products/ebisu/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/products/ebisu/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://stellar-aiz.com/en/pages/products/ebisu/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/products/ebisu/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/products/ebisu/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/products/ebisu/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Products - Stellar Economics Features -->
-  <url>
-    <loc>https://stellar-aiz.com/pages/products/ebisu/features/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/products/ebisu/features/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/products/ebisu/features/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/products/ebisu/features/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://stellar-aiz.com/en/pages/products/ebisu/features/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/products/ebisu/features/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/products/ebisu/features/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/products/ebisu/features/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Products - Stellar Coach (Tenjin) -->
-  <url>
-    <loc>https://stellar-aiz.com/pages/products/tenjin/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/products/tenjin/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/products/tenjin/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/products/tenjin/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://stellar-aiz.com/en/pages/products/tenjin/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/products/tenjin/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/products/tenjin/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stellar-aiz.com/pages/products/tenjin/"/>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url><loc>https://stellar-aiz.com/pages/record/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/record/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/record/"/></url>
+<url><loc>https://stellar-aiz.com/en/pages/record/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/record/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/record/"/></url>
+<url><loc>https://stellar-aiz.com/pages/about/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/about/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/about/"/></url>
+<url><loc>https://stellar-aiz.com/en/pages/about/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/about/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/about/"/></url>
+<url><loc>https://stellar-aiz.com/pages/inquiry/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/inquiry/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/inquiry/"/></url>
+<url><loc>https://stellar-aiz.com/en/pages/inquiry/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/inquiry/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/inquiry/"/></url>
+<url><loc>https://stellar-aiz.com/pages/doggies/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/doggies/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/doggies/"/></url>
+<url><loc>https://stellar-aiz.com/en/pages/doggies/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/doggies/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/doggies/"/></url>
+<url><loc>https://stellar-aiz.com/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/"/></url>
+<url><loc>https://stellar-aiz.com/en/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/"/></url>
+<url><loc>https://stellar-aiz.com/pages/news/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/news/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/news/"/></url>
+<url><loc>https://stellar-aiz.com/en/pages/news/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/news/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/news/"/></url>
+<url><loc>https://stellar-aiz.com/pages/members/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/members/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/members/"/></url>
+<url><loc>https://stellar-aiz.com/en/pages/members/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/members/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/members/"/></url>
+<url><loc>https://stellar-aiz.com/pages/services/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/services/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/services/"/></url>
+<url><loc>https://stellar-aiz.com/en/pages/services/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/services/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/services/"/></url>
+<url><loc>https://stellar-aiz.com/pages/privacy/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/privacy/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/privacy/"/></url>
+<url><loc>https://stellar-aiz.com/en/pages/privacy/</loc><xhtml:link rel="alternate" hreflang="ja" href="https://stellar-aiz.com/pages/privacy/"/><xhtml:link rel="alternate" hreflang="en" href="https://stellar-aiz.com/en/pages/privacy/"/></url>
 </urlset>
